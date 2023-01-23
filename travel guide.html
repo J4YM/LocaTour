@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<HTML>
+  <html lang="en" dir="ltr">
+  <head>
+    <title>LocaTour | Travel Guide</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="CSS/travel guide.css" rel="stylesheet"  />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"> 
+    <link rel="shortcut icon" href="assets/logo.png" type="image/gif" />
+    <script src="https://kit.fontawesom.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <nav>
+      <img src="assets/logo.png" alt="logo">
+      <ul id="sidebar">
+        <i class="fa fa-times" onclick="hideBar()"></i>
+        <br />
+        <br />
+        <li><a href="index.html">HOME</a></li>
+        <li><a class="active" href="#">TRAVEL GUIDE</a></li>
+        <li><a href="places.html">PLACES</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+      </ul>
+      <i class="fa fa-bars" onclick="showBar()"></i>
+    </nav>
+    <script>
+    var sidebar = document.getElementById("sidebar");
+
+    function hideBar() {
+      sidebar.style.right = "-200px";
+    }
+
+    function showBar() {
+      sidebar.style.right = "0"
+    }
+   </script>
+   
+
+  <!--for context smooth scroll-->
+    <div class="main" id="section1">
+      <h1> ABOUT PAMPANGA  </h1>
+      <p> Pampanga is one of the most well-known provinces in Central Luzon because it is known as the <br> Culinary Capital of the Philippines. </p>
+      <br><br><br><br>
+      <ul>
+        <a href="#section1" id="sub-tabs"> History </a>
+        <a href ="#section3" id="sub-tabs"> Culture </a>
+        <a href ="#section5" id="sub-tabs"> Nature </a>
+      </ul>
+    </div>
+ 
+    <div id="section2">
+      <h2>Brief History of Pampanga</h2>
+      <p> Pampanga, one of the richest provinces in the Philippines, was reorganized as a province by the Spaniards on December 11, 1571. Located in the central part of Region III, bordered on the north by Tarlac and Nueva Ecija, and on the east by Bulacan. The terrain is relatively flat, with only one distinct mountain, Mount Arayat. Martn de Goiti, a Spanish conquistador, established this province in 1571. The name was derived from the native Kapampangan words "pangpang ilog," which means "riverside," and refers to the early Malayan settlements along the Rio Grande de la Pampanga. </p>
+      <img src="assets/history of pamp.png" width:"100"  height:"200">
+    </div>
+
+    <div id="section3">
+        <h2>Kapampangan Culture</h2>
+        <p> Kapampangans are well known for their passion for food and their festivities reflect their happy life. But do you know one of the most exciting things to do in Pampanga? Festivals, indeed! Pampanga is well-known for hosting some of the country's most spectacular events. In fact, millions of people, both domestic and international, visit the region each year just to see these anticipated events. So, put on your dancing shoes and let's discover Pampanga's best
+        festivals!</p>
+      <br>
+      <br>
+      <div id="subsectiontab">
+        <a href="#section4" id="festivals"> Festivals </a>
+        <img src="assets/food.png">
+      </div>
+    </div>
+    
+
+    <div id="section4">
+
+    <div class="slides">
+      <input type="radio" name="r" id="r1" checked>
+      <input type="radio" name="r" id="r2">
+      <input type="radio" name="r" id="r3">
+      <input type="radio" name="r" id="r4">
+      <input type="radio" name="r" id="r5">
+      
+      <div class="slide s1">
+        <img src="assets/sampaguita.png">
+      </div>
+      
+      <div class="slide">
+        <img src="assets/sinukwan.png">
+      </div>
+
+      <div class="slide">
+        <img src="assets/sisig.png">
+      </div>
+
+      <div class="slide">
+        <img src="assets/ibon ibon.png">
+      </div>
+
+      <div class="slide">
+        <img src="assets/duman.png" >
+      </div>
+    </div>
+
+    <div class="navigation">
+      <label for="r1" class="bar"></label>
+      <label for="r2" class="bar"></label>
+      <label for="r3" class="bar"></label>
+      <label for="r4" class="bar"></label>
+      <label for="r5" class="bar"></label>
+    </div> 
+
+    <div id="section5">    
+      <h2>Pampanga's Natural Environment</h2>
+      <p> Pampanga has a lot to offer not only in the food industry, but also in natural beauty, with stunning waterfalls, majestic mountain views, and peaceful wetlands. In the province, you can go on a hike, swim in natural pools, and see various migratory birds. </p>
+      <div id = "image1" >
+        <img src="assets/nature1.png" width="40%" height="70%">
+      </div>
+      <br>
+      <div id="image2">
+        <img src="assets/nature2.png" width="25%" height="auto"> 
+      </div>
+      <br>
+      <div id="image3">
+        <img src="assets/nature3.jpg" width="19.7%" height="auto" >
+      </div>
+    </div>
+
+    <!--footer-->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="row">
+          <div class="footer-col">
+            <img src="assets/footer_logo.png" width="300" height="100">
+            <h3 id="Title">PAMPANGA PHILIPPINES</h3>
+              <h4 id="title-subtext">Learn, Explore, and Discover </h4>
+            
+          </div>
+          <div class="footer-col">
+            <h4 id="menu">Menu</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="travel guide.html">Travel Guide</a></li>
+              <li><a href="places.html">Places</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 id="about-website">About our Website</h4>
+            <ul>
+              <li><p>This project aims to improve the<br> locality of Pampanga by<br> promoting their tourist attractions,<br> culture, and experiences in each <br>destination.</p></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-subcol">
+          <p> © 2021 LocaTour. All rights reserved. Made by RAVEN Tech <p>
+        </div>
+      <div> 
+    </footer>
+
+  </body>
+</HTML>

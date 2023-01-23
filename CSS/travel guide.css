@@ -1,0 +1,919 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+  body {
+  font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
+  background-color: white;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  overflow-x: hidden;
+  }
+
+  nav {
+  background: #ffdf27;
+  display: flex;
+  padding: -4% 3%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100000;
+  cursor: pointer;
+}
+
+nav img {
+  height: 93px;
+  width: 100px;
+  margin-top: -7px;
+}
+
+nav ul {
+  flex: 1;
+  text-align: center;
+  margin-left: -120px;
+  margin-top: -40px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+nav ul li a {
+  color: #ffffff;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: capitalize;
+  text-align: center
+}
+
+a.active,a:hover {
+  background: #252525;
+  transition: .5s;
+}
+
+nav .fa {
+  display: none;
+}
+
+@media(max-width: 700px){
+  .text-box h1 {
+    font-size: 40px
+  }
+
+ /* Side bar for mobile  */
+
+  .nav ul li {
+    display: inline-block;
+    text-align: center
+  }
+
+  nav ul {
+    position: absolute;
+    background: #ffdf27;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    z-index: 2;
+    text-align: center;
+    margin-left: 0;
+    padding: 30px;
+    transition: 1s;
+  }
+
+  nav .fa {
+    display: block;
+    color: black;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    float: left;
+  }
+}
+
+/*smooth scroll context*/
+html {
+  scroll-behavior: smooth;
+}
+
+#section1 {
+  height: 300px;
+}
+
+#section1 h1{
+  text-align: center;
+  margin-right: 120px;
+  margin-top: 155px;
+  display: block;
+  font-size: 50px;
+  letter-spacing: 0px;
+}
+
+#section1 p{
+  text-align: center;
+  margin-right: 120px;
+  margin-top: 15px;
+  display: block;
+  font-size: 20px;
+  letter-spacing: 0px;
+}
+
+#section2 {
+  height: 600px;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  
+}
+
+#section2 h2 {
+  padding-top: 100px;
+  margin-left: 65%;
+  letter-spacing: 1px;
+  
+}
+
+#section2 p {
+  text-align: justify;
+  margin-left: 65%;
+  margin-right: 10%;
+  margin-top: 15px;
+}
+
+#section2 img{
+  width:35%;
+  margin-left:13%;
+  margin-top:-19%;
+}
+
+#section3 {
+  height: 600px;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+
+#section3 h2{
+  padding-top: 200px;
+  margin-left: 200px;
+  letter-spacing: 1px;
+}
+
+#section3 p {
+  text-align: justify;
+  margin-left: 200px;
+  margin-top: 15px;
+  margin-right: 60%;
+}
+
+#subsectiontab img{
+  width:33%;
+  margin-left:50%;
+  margin-top:-100%;
+}
+
+
+#subsectiontab #festivals {
+  border-radius: 50px;
+  border: 1px solid rgb(255, 18, 18) ;
+  margin-left: 250px;
+  margin-right: 70%;
+  margin-top: 50px;
+  padding: 15px;
+  height: 10px;
+  text-align: center;
+  font-size:20px;
+}
+
+#subsectiontab #festivals:visited {
+  color: rgb(255, 18, 18);
+}
+
+#subsectiontab #festivals:hover {
+  color: white;
+  background: rgb(255, 18, 18);
+}
+
+#subsectiontab a:link {
+  text-decoration: none;
+  color:rgb(158, 0, 0);
+}
+
+#section4 {
+  height: 70%;
+  overflow: hidden;
+}
+
+/*size of bar tabs*/
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.navigation{
+  position: relative;
+  bottom: 90px;    
+  left: 89%;
+  transform: translate(-50%);
+  display: flex;
+  
+}
+
+.bar{
+    width: 50px;
+    height: 15px;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.bar:hover{
+    background: rgb(245, 244, 244);
+    transform: translateY(-50%);
+    transition: 0.5s
+}
+
+input[name="r"]{
+  position: absolute;
+  visibility: hidden;
+}
+.slides{
+  width: 500%;
+  height: 50%;
+  display: flex;
+}
+
+.slide{
+  width: 20%;
+  transition: 0.6s;
+}
+
+/*para sa image */
+.slide img{
+  width: 100%;
+  
+}
+
+/* radio buttons */
+#r1:checked ~ .s1{
+    margin-left: 0;
+
+}
+#r2:checked ~ .s1{
+    margin-left: -20%;
+  
+}
+#r3:checked ~ .s1{
+    margin-left: -40%;
+
+}
+#r4:checked ~ .s1{
+    margin-left: -60%;
+}
+#r5:checked ~ .s1{
+    margin-left: -80%;
+}
+
+/*end of section 4*/
+
+#section5 {
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: -100px;
+}
+
+#section5 h2{
+padding-top: 200px;
+margin-left: 60%;
+letter-spacing: 1px;
+}
+
+#section5 p{
+  text-align: justify;
+  margin-left: 60%;
+  margin-top: 15px;
+  margin-right: 15%;
+}
+
+/*mag sabi kayo if may iibahin kayo dito na code*/
+
+#section5 #image1 {
+  margin-left:10%;
+  margin-top:-19%;
+  max-width: 100%;
+}
+
+
+#section5 #image2 {
+  margin-left:28%;
+  margin-top:-1%;
+}
+
+#section5 #image3 {
+  margin-left: 10%;
+  margin-top:-19.5%; 
+}
+
+/* tabs under travel guide header */
+
+#sub-tabs {
+  border-radius: 50px;
+  border: 1px solid rgb(255, 18, 18);
+  margin-left: 38vh; /*eto pinalitan ko px ginawa kong vh*/
+  padding: 20px;
+  height: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+#sub-tabs:link {
+  color: rgb(158, 0, 0);
+}
+
+#sub-tabs:visited {
+  color: rgb(255, 18, 18);
+}
+
+
+#sub-tabs:hover {
+ color: #ffffff;
+ background-color: rgb(255, 18, 18);
+}
+
+/* footer (new) */
+
+.footer-container{
+  max-width: 100%;
+  background-color: black;
+  margin-left:10vh;
+}
+.row {
+  flex-wrap: wrap;
+  display: flex;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+ul{
+  list-style: none;
+  color:white;
+}
+
+/*margin ng footer*/
+.footer{
+  background-color: black;
+  margin-top:80%;
+}
+
+.footer-col{
+  width: 30%;
+  padding: 0 100px;
+}
+
+
+
+/*pampanga philippines*/
+.footer-col h3{
+  text-align:justify-center;
+  font-size: 18px;
+  color: rgb(196, 196, 196);
+  text-transform: capitalize;
+  margin-top: -12%;
+  margin-bottom: 20px;
+  padding-bottom:20px;
+  border-bottom:1px solid white;
+  font-weight: lighter;
+}
+
+/*menu*/
+.footer-col h4{
+  text-align:left;
+  font-size: 17px;
+  color: rgb(196, 196, 196);
+  margin-left: 4%;
+  text-transform: capitalize;
+  margin-top: 10%;
+  margin-bottom: 30px;
+  font-weight: lighter;
+}
+
+.footer-col img {
+  margin-left:-5em;
+}
+
+.footer-col h4#menu {
+ /* padding-bottom: 0px; */
+  border-bottom: 3px solid #911d1d;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 50px;
+  margin-left:5.6em;
+}
+
+.footer-col #about-website {
+  color: gray;
+  font-size:19px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+
+.footer-col ul li p {
+  text-align: left;
+  color: white;
+  margin-top:-10%;
+  margin-left: 5%;
+  line-height: 1.5;
+  margin-right: -20%;
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.footer-col ul li:not(:last-child){
+  margin-bottom: 5px;
+}
+
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: rgb(240, 240, 240);
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: 0.5s;
+  text-align: left;
+  margin-left: 40%;
+}
+
+.footer-col ul li a#title-subtext{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: 0.5s;
+  cursor: none;
+}
+
+.footer-col ul li a:hover {
+  background-color: black;
+  color: white;
+  padding-left: 10px;
+}
+
+.footer-subcol p {
+  border-top: 1px solid white;
+  margin-left:-5em;
+  text-align: center;
+  color: white;
+}
+
+
+
+/* -----------------------------------SA TSPOTS LAHAT TO---------------------------------------------- */
+
+.section-main {
+  height: 500%;
+  border-radius: 0px;
+ /* background-image: url("assets/placebackgrounds/angelesbg.jpg");*/  /*parasaaan 'to*/
+  background-color: #383333;
+  align-items: center;
+}
+
+.section-main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10evh;
+  background: tebf5fc;
+}
+
+/*alignment ng cards*/
+.section-main h2 {
+  text-align: center;
+  margin-top: -30%;
+  margin-left: 60px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 100px;
+}
+
+.container .card {
+  position: relative;
+  width: 330px;
+  height: 440px;
+}
+
+.container .card:hover .box {
+/*  transform: translateY(-50px); */
+  box-shadow: 10px 40px rgba(0,0,0,0.2); 
+  background: linear-gradient(45deg,#cc3f3f,#f1fc5e);
+  cursor: pointer;
+}
+
+.container .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+/*  content sa cards*/
+.container .card .box .content h3 {
+  font-size: 1.3em;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+/* sa hover ng content title*/
+.container .card:hover .box .content h3 {
+  color: black;
+}
+
+.container .card .box .content p {
+  font-size: 1em;
+  font-weight: 300;
+  color: #eeeeee;
+  z-index: 1;
+  transition: 0.5s;
+  margin-top: 5%;
+  
+}
+
+.container .card:hover .box .content p {
+  color: black;
+}
+
+
+
+/* tabs sa mga cards*/
+.container .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 15px 20px;
+  background: rgb(255, 18, 18);
+  margin-top: 2em;
+  border-radius: 30px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  box-shadow: 0 10px 20px rgba(0 ,0 ,0 ,0.2);
+
+}
+
+
+.container .card:hover .box .content a {
+ background: #000000;
+}
+
+
+.container .card .box {
+  position: absolute;
+  top: 20px;
+  Left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background:  #383333;
+ /* box-shadow: 1px 10px 1px rgba(0,0,0,0.2); */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.container .card:hover .box {
+  box-shadow:  1px 40px 8px rgba(0,0,0,0.2);
+}
+
+ 
+
+/* back to top button */
+
+.backtotop .gotopbtn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: rgb(80, 80, 80); /*box color */
+  border-radius: 29px;
+  bottom: 40px;
+  right: 50px;
+
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: rgb(255, 255, 255); /*arrow color */
+  font-size: 12px;
+}
+
+.backtotop .gotopbtn:visited {
+  color: rgb(241, 241, 241);
+}
+
+
+.backtotop .gotopbtn:hover {
+ color: #cc5050;
+ background-color: rgb(241, 241, 241);
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+ width: 10px;
+ height: 1px ;
+ background-color: #fdfdfd;
+} 
+::-webkit-scrollbar-track {
+ border: 1px solid rgba(0, 0, 0, 0.25);
+ box-shadow: inset 0 0 2.5px 2 rgba(0,0,0,.5);
+}
+
+::-webkit-scrollbar-thumb {
+ background-color: #645d5d;
+ border-radius: 20px;
+ outline: 1px solid rgb(0, 0, 0);
+}  
+
+/* katabi ng mga cards,
+ try ko lang galing to ng css ng tabs sa about */
+
+.tabs h1{
+  margin-bottom: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.tabs {
+  position:relative;
+  margin-top: 60%;
+  margin-left:50%;
+  transform:translate(-50%, -50%);
+  width:600px;
+  height:440px;
+  background:white;
+  padding:20px 30px;
+  overflow:hidden;
+  border-radius:50px;
+  box-shadow: 5px 10px 5px #ccc; 
+  text-align: center;
+  
+}
+
+.tabs .tab-header {
+  height:60px;
+  display:flex;
+  align-items:center;
+}
+.tabs .tab-header > div {
+  width:calc(100% / 4);
+  text-align:center;
+  color:#888;            
+  font-weight:600;
+  cursor: pointer;
+  font-size:14px;
+  text-transform:uppercase;
+  outline: none;
+}
+
+.tabs .tab-header > div:hover{
+  color:#000000;
+  
+}
+
+.tabs .tab-header > div > i{
+ display: block;
+ margin-bottom:5px;
+}
+
+.tabs .tab-header > div.active{
+color:gray;
+}
+
+.tabs .tab-indicator{
+  position:relative;
+  width: calc(100%/4);
+  height: 100px;
+  background: #c7ccce;
+  border-radius:5px;
+  transition: all 500ms ease-in-out;
+  
+}
+
+tabs tab-body {
+ position:relative;
+ height:calc(100% - 60px);
+ padding:10px 5px;
+}
+
+/*for content*/
+.tabs .tab-body header{
+  font-size:25px;
+} 
+.tabs .tab-body h6{
+  font-weight:10;
+}
+.tabs .tab-body p{
+  margin-right:40%; 
+}
+
+/* Map in tspots */
+
+#map {
+  display: block;
+  margin-left: 35%;
+  margin-right: auto;
+  margin-top: 100px;
+  position: relative;
+  align-items: center;
+}
+
+#click-inst p {
+  text-align: center;
+  margin-top: 20px;
+  display: block;
+  font-size: 25px;
+  font-weight:lighter;
+}
+
+/* pop-up css */
+
+.popup .overlay {
+ position:fixed;
+ top:0px;
+ left:0px;
+ width:100vw;
+ height:100vh;
+ background:rgba(0,0,0,0.7);
+ z-index:1;
+ display:none;
+}
+
+/* box ng overlay please sabihen nyo kung babaguhin nyo to*/ 
+.popup .content {
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%) scale(0);
+  background:#fff;
+  width:90%;
+  height:75%;
+  z-index:2;
+  text-align:center;
+  padding:20px;
+  box-sizing:border-box;
+  transition:300ms;
+  overflow: auto;
+}
+/*content ng about */
+.popup .content h1{
+  margin-top: 6%;
+  text-align: left;
+  font-size: 50px;
+  margin-left: 10%;
+}
+
+
+.popup .content h1:before{
+  content: "";
+  display: block;
+  width: 460px ;
+  height: 1px ;
+  background: #000000;
+  position: absolute;
+  margin-right: 6px;
+  top: 35%;
+}
+
+.popup .content p{
+  margin-top: 2%;
+  text-align: justify;
+  margin-right: 55%;
+  margin-left: 10%;
+}
+
+.popup .content p a {
+}
+
+.popup .content p a:hover {
+ background-color: transparent;
+}
+
+
+.popup .content .image{
+  margin-top: -28%;
+  margin-left: 55%;
+}
+ 
+/*content ng culture*/ /* magsabi kayo if may babaguhin kayo d2*/
+.popup .content .culture{
+  margin-top: 10%;
+  text-align: left;
+  font-size: 50px;
+  margin-left: 10%;
+}
+
+.popup .content .culture:before{
+  content: "";
+  display: block;
+  width: 450px ;
+  height: 1px ;
+  background: #000000;
+  position: fixed;
+  margin-right: 6px;
+  top: 45%;
+}
+
+.popup .content .culture-p{
+  margin-top: 2%;
+  text-align: justify;
+  margin-right: 56%;
+  margin-left: 10%;
+}
+
+.popup .content .grid{
+  margin-top: -29%;
+  margin-left: 50%;
+}
+
+/*content sa tourist spots*/
+.popup .content .attraction-h{
+  margin-top: 7%;
+  text-align:left;
+  font-size: 30px;
+  margin-left: 2%;
+  text-transform: uppercase;
+}
+
+
+.popup .content .attraction{
+  margin-top: 10%;
+  text-align: left;
+  font-size: 50px;
+  margin-left: 2%;
+}
+
+.popup .content .attraction-p{
+  margin-top: 2%;
+  text-align: left;
+  margin-left: 2%;
+  margin-right: 10%;
+}
+
+.popup .content .collage{
+ margin-top:2%;
+}
+ 
+
+
+/* X button */ 
+.close-btn {
+  position:sticky;
+  margin-left: 98%;
+  top:5px;
+  width:30px;
+  height:30px;
+  background:#222;
+  color:#fff;
+  font-size:25px;
+  font-weight:600;
+  line-height:30px;
+  text-align:center;
+  border-radius:50%;
+  cursor: pointer;
+}
+
+
+.popup.active .overlay {
+  display:block;
+}
+
+/* transition ng overlay */
+.popup.active .content {
+  transition:all 0.5s ease-in-out;
+  transform:translate(-50%, -50% ) scale(1);
+}
+

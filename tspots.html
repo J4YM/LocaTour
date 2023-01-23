@@ -1,0 +1,1925 @@
+ <!DOCTYPE html>
+<HTML>
+  <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Destinations</title>
+    <link href="CSS/travel guide.css" rel="stylesheet"  />
+    <link href="CSS/tspots.scss" rel="stylesheet"  />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/gif" />
+    <script src="https://kit.fontawesom.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  </head>
+  <body>
+    <nav>
+      <img src="assets/logo.png" alt="logo">
+     <ul id="sidebar">
+        <i class="fa fa-times" onclick="hideBar()"></i>
+        <br />
+        <br />
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="travel guide.html">TRAVEL GUIDE</a></li>
+        <li><a href="places.html">PLACES</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+      </ul>
+      <i class="fa fa-bars" onclick="showBar()"></i>
+    </nav>
+
+    <img id="map" src="assets/map.png" usemap="#image-map">
+
+  <map name="image-map">
+    <area target="" alt="Florida Blanca" title="Florida Blanca" href="#floridablanca" coords="41,206,146,237,158,286,113,309" shape="poly">
+    <area target="" alt="Lubao" title="Lubao" href="#lubao" coords="177,269,226,296,188,365,119,366" shape="poly">
+    <area target="" alt="Sasmuan" title="Sasmuan" href="#sasmuan" coords="227,296,250,322,228,351,212,339" shape="poly">
+    <area target="" alt="Masantol" title="Masantol" href="#masantol" coords="314,362,278,355,271,386,293,416" shape="poly">
+    <area target="" alt="Macabebe" title="Macabebe" href="#macabebe" coords="322,307,327,350,246,344,272,328" shape="poly">
+    <area target="" alt="Apalit" title="Apalit" href="#apalit" coords="349,277,441,266,428,289,407,305,396,313,377,320,354,321,338,315,338,292" shape="poly">
+    <area target="" alt="Minalin" title="Minalin" href="#minalin" coords="291,262,316,266,333,264,331,286,327,294,311,303,305,306,296,310,282,314,262,302,261,289" shape="poly">
+    <area target="" alt="Sto Tomas" title="Sto Tomas" href="#stotomas" coords="310,241,321,246,327,254,315,258,303,254" shape="poly">
+    <area target="" alt="San Simon" title="San Simon" href="#sansimon" coords="330,226,348,227,368,230,389,238,396,246,405,257,388,264,372,268,362,270,350,272,342,271,337,258,334,251,330,242,331,233" shape="poly">
+    <area target="" alt="Candaba" title="Candaba" href="#candaba" coords="384,140,407,133,426,126,437,120,444,102,460,90,474,90,508,82,505,97,510,122,528,135,514,144,517,152,504,166,478,183,481,199,491,205,501,214,489,223,485,231,433,239,433,195,402,189,382,159,384,147" shape="poly">
+    <area target="" alt="San Luis" title="San Luis" href="#sanluis" coords="378,193,385,188,394,189,406,190,419,198,418,218,426,236,425,243,412,241,398,239,386,229,377,223,366,217,368,206" shape="poly">
+    <area target="" alt="Arayat" title="Arayat" href="#arayat" coords="365,34,348,33,333,42,333,55,325,64,321,74,305,89,291,94,278,98,285,110,301,109,317,114,320,122,329,123,341,127,356,133,369,141,378,133,393,130,405,125,419,122,430,113,425,99,415,79,393,77" shape="poly">
+    <area target="" alt="Magalang" title="Magalang" href="#magalang" coords="233,14,243,13,254,9,267,0,281,2,290,9,295,17,305,13,315,9,326,13,333,11,338,15,332,28,324,39,319,45,311,60,306,69,301,75,286,77,258,77,237,72,232,54" shape="poly">
+    <area target="" alt="Angeles" title="Angeles" href="#angeles" coords="223,96,197,99,173,100,133,95,117,91,103,98,108,107,117,111,128,115,156,115,167,118,178,124,188,129,199,144,215,128,228,120,241,116,237,100" shape="poly">
+    <area target="" alt="Porac" title="Porac" href="#porac" coords="63,89,27,117,14,129,13,156,28,173,43,193,63,207,93,217,123,226,159,238,180,239,191,213,184,180,175,160,155,144,133,134,113,123,100,119,86,114,82,120,91,120" shape="poly">
+    <area target="" alt="Guagua" title="Guagua" href="#guagua" coords="203,258,211,262,222,259,230,259,248,259,255,270,257,278,250,282,246,291,234,290,221,278,215,280,200,269,185,265" shape="poly">
+    <area target="" alt="Sta Rita" title="Sta Rita" href="#starita" coords="196,225,201,222,210,229,217,231,226,240,222,249,211,252,201,251,191,238" shape="poly">
+    <area target="" alt="Bacolor" title="Bacolor" href="#bacolor" coords="212,149,217,162,223,175,232,192,246,200,268,222,275,239,286,253,273,262,248,256,231,238,219,222,209,205,202,207" shape="poly">
+    <area target="" alt="San Fernando" title="San Fernando" href="#sanfernando" coords="222,140,233,138,249,151,269,176,293,199,308,218,306,230,286,238,276,222,257,198,246,192,236,183,229,174,226,158" shape="poly">
+    <area target="" alt="Mexico" title="Mexico" href="#mexico" coords="256,88,271,97,290,117,306,140,327,161,343,179,356,194,330,201,325,213,301,201,281,183,266,158,252,139,246,120" shape="poly">
+    <area target="" alt="Sta Ana" title="Sta Ana" href="#stana" coords="326,128,333,132,344,134,356,142,374,156,377,177,368,182,356,178,343,162,333,151,321,144,315,136,310,128" shape="poly">
+    <area target="" alt="Mabalacat" title="Mabalacat" href="#mabalacat" coords="101,58,98,68,93,83,113,82,124,82,139,84,170,81,188,92,209,89,225,87,234,82,223,63,225,36,225,18,198,15" shape="poly">
+  </map>
+  
+  <div id="click-inst">
+    <p>Click on a specific location to learn more about its culture and tourist attractions. </p>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <!-- Places, descriptions and tourist spots -->
+                                           
+   <!--ANGELES PAMPANGA--> 
+   <div class="section-main" id="angeles">
+     
+    <div class="container">
+      <div class="popup" id="popup-1"> 
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup1()">&times;</div>
+          <h1> Angeles </h1>
+          <p> The entertainment capital of northern Luzon and is known as the "City of Angels." There is a saying that "It is the city where many dreams come true and also where many hearts are broken." <br> </br>It is one of the most highly urbanized cities and is commonly grouped with the coastal province of Pampanga. The city covers an area of 63.37 square kilometers (24.47 square miles). The population was 462,928 according to the 2020 Census. This accounted for 3.73 percent of the total population of Central Luzon. Based on these figures, the population density is calculated to be 7,305 people per square kilometer or 18,918 people per square mile. </p>
+          <div class="image">
+            <img src="assets/angeles.png" width="70%" height="auto" >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>About Angeles</h3>
+            <p>The entertainment capital of northern Luzon and is known as the "City of Angels." There is a saying that "It is the city where many dreams come true and also where many hearts are broken"...</p>
+            <a onclick="togglePopup1()">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-2">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup2()">&times;</div>
+            <h1 class="attraction-h">Places you must visit</h1>
+            <br>
+          <h1 class="attraction">Rosary Parish Church</h1>
+          <p class="attraction-p">It was laid out by city planners in the Spanish colonial era and is now one of the most distinctive places in the city of Angeles. The Holy Rosary Parish is also known as Santo Rosario Church, locals refer to it as "Pisambang Maragul".  
+          <br>
+          <a href="https://www.google.com/maps/dir/Pampanga/Holy+Rosary+Parish+Church,+Santo+Rosario+Street,+Angeles,+Pampanga/@15.1142295,120.5808043,13.22z/data=!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x3396f24f232c8c0d:0x9806ef08494e895c!2m2!1d120.5904931!2d15.1344988!3e0" target="_blank"> Directions can be accessed by clicking here.</a>
+          </p>
+          <div class="collage">
+            <img src="assets/angeles%20tspots.png" width="70%" height="auto" >
+          </div>
+          <h1 class="attraction">Museu ning Ángeles </h1>
+          <p class="attraction-p">Its name stands for “Museum of Angels”. It is run by the Kuliat Foundation and is located in the Sto. Rosario Historic District, right beside the Barangay Hall, and across the 140-year old Holy Rosary Parish Church. Its main exhibit features the evolution and history of the city and its people. It showcases Angeles City’s pre-colonial inhabitants and migrants, and its famous historical personalities.
+          <br>
+          <a href="https://www.google.com/maps/dir/Pampanga/Museo+ning+%C3%81ngeles,+Santo+Rosario+Street,+Angeles,+Pampanga/@15.1075602,120.5844739,13.22z/data=!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x3396f24f4ba14ca1:0x1179dcd197a42200!2m2!1d120.5909281!2d15.1347597!3e0" target="_blank"> The routes can be accessed by clicking here.</a>
+          </p>
+          <div class="collage">
+            <img src="assets/museo%20ning%20angeles.png" width="70%" height="auto" > </div>
+
+          <h1 class="attraction">Puning Hot Springs</h1>
+          <p class="attraction-p">This is the ideal destination for those who enjoy nature and relaxing activities. It is a thermal spring near Mt. Pinatubo. You can also get a chance to do leisure activities such as riding a 4x4 and driving through lahar canyons near the Puning Hot Spring and Restaurant.
+            <br>
+            <a href="https://www.google.com/maps/dir/Pampanga/Puning+Hot+Spring+and+Restaurant,+Angeles,+Pampanga/@15.1294738,120.5168066,12.48z/data=!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x33968d5b4726340b:0xee658c7fc25a5369!2m2!1d120.4901205!2d15.1659512!3e0" target="_blank"> The routes can be accessed by clicking here.</a> </p>
+             <div class="collage">
+            <img src="assets/puning%20hot%20spring.png" width="70%" height="auto" > </div>
+            
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Tourist Spots</h3>
+            <p>Come and Visit all the wonderful attractions Angeles, Pampanga has to offer</p>
+            <br><br>
+            <a onclick="togglePopup2()">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-3">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup3()">&times;</div>
+          <h1 class="culture">Culture & Tradition</h1>
+          <p class="culture-p"> Without a doubt, Angeles Pampanga is home to some of the best regional dishes and cuisines. First off, it’s where the famous sizzling sisig came from.  The people take pride in having several varieties – pork, chicken, kamaru (cricket), and balut, to name a few. However, it's not all about the sisig. There is also an exciting fiesta celebration in the city. The festivities are endless, whether it's Fiestang Kuliat, Bagius dance, giant lanterns at Lubenas Ning Pascu, or partying the night away at Tigtigan Terakan Kengdalan.</p>
+         <img class="grid"
+          src="assets/angeles%20culture.png" width= "35%" height="auto" >
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Culture of Angeles</h3>
+            <p> Without a doubt, Angeles Pampanga is home to some of the best regional dishes and cuisines. First off, it’s where the famous sizzling sisig came from...</p>
+            <a onclick="togglePopup3()">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+                                                <!--APALIT PAMPANGA-->
+  <div class="section-main" id="apalit">
+    
+    <div class="container">
+      <div class="popup" id="popup-4">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup4()">&times;</div>
+          <h1>Apalit</h1>
+          <p> Province of Pampanga <br> </br> Apalit is a landlocked municipality in Pampanga's coastal province. The municipality has a land area of 61.47 square kilometers or 23.73 square miles, accounting for 3.07 percent of the total area of Pampanga. The population was 117,160 according to the 2020 Census. This accounted for 4.81 percent of the total population of Pampanga province, or 0.94 percent of the Central Luzon region's total population. Based on these figures, the population density is calculated to be 1,906 people per square kilometer or 4,937 people per square mile.</p>
+          <div class="image">
+          <img src="assets/apalit%20about.png" width="70%" height="auto" >
+        </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>About Apalit</h3>
+            <p>Apalit is a landlocked municipality in Pampanga's coastal province. The municipality has a land area of 61.47 square kilometers or 23.73 square miles...</p>
+            <a onclick="togglePopup4()">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-5">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup5()">&times;</div>
+          <h1 class="attraction-h">Places you must visit</h1>
+          <br>
+          <h1 class="attraction">St. Peter's Shrine</h1>
+          <p class="attraction-p">Apalit Church measures 59 meters long and 14 meters wide. The facade resembles Neo-Renaissance Style with its plain, low segmental pediment and the symmetrical alignment of 2 flanking towers. The semi-circular main door with a circular window above is framed by receding semicircular arches in relief.<br>
+          <a href="https://www.google.com/maps/dir/Pampanga/St.+Peter+Shrine,+Apalit,+Pampanga/@15.0201626,120.6239321,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x339656f8468d53b9:0xdd5cfa7ab77c2e67!2m2!1d120.7678291!2d14.9308682!3e0" target="_blank"> The routes can be accessed by clicking here.</a></p>
+          <div class="collage">
+            <img src="assets/st%20peter%20shrine.png" width="70%" height="auto" > </div>
+          </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Tourist Spots</h3>
+            <p>Be ready for all the stunning sceneries Apalit, Pampanga has in store for you!</p>
+            <br><br>
+            <a onclick="togglePopup5()">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-6">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup6()">&times;</div>
+          <h1 class="culture"> Culture & Tradition</h1>
+          <p class="culture-p"> <br> <br>Apalit Pampanga, is a wonderful place to visit, particularly for its culture and traditions. Every 28th of June, they celebrate St. Peter's Feast Day, and many people come to see the traditional "Pagoda." Apalit also has a lot of delicious food. Apart from that, the people in this city are extremely accommodating and kind.</p>
+         <img class="grid"
+          src="assets/apalit%20culture.png" width= "35%" height="auto" >
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Culture of Apalit</h3>
+            <p>Apalit Pampanga, is a wonderful place to visit, particularly for its culture and traditions. Every 28th of June, they celebrate...</p>
+            <a onclick="togglePopup6()">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+                                    <!--ARAYAT PAMPANGA-->
+  <div class="section-main" id="arayat">
+    <div class="container">
+      <div class="popup" id="popup-7">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup7()">&times;</div>
+          <h1>Arayat </h1>
+          <p> Province of Pampanga <br> </br> Arayat is a landlocked municipality in Pampanga's coastal province. The municipality has a land area of 134.48 square kilometers or 51.92 square miles, accounting for 6.72 percent of the total area of Pampanga. According to the 2020 Census, its population was 144,875. This accounted for 5.94 percent of the total population of Pampanga province, or 1.17 percent of the Central Luzon region's total population. Based on these figures, the population density is calculated to be 1,077 people per square kilometer or 2,790 people per square mile.</p>
+          <div class="image">
+            <img src="assets/arayat%20about.png" width="70%" height="auto" >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>About Arayat</h3>
+            <p>The municipality has a land area of 134.48 square kilometers or 51.92 square miles, accounting for 6.72 percent of the total area of Pampanga...</p>
+            <a onclick="togglePopup7()">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-8">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup8()">&times;</div>
+          <h1 class="attraction-h">Places you must visit</h1>
+          <br>
+          <h1 class="attraction">Mt. Arayat National Park </h1>
+          <p class="attraction-p"> Considered as one of the most accessible parks from Manila, the mystical mountain of Mt. Arayat lies within the municipalities of Arayat and Magalang in Pampanga. At the summit is a circular volcanic crater, and at its foot is the Pampanga river, the second largest in Luzon, which traverses the provinces of Bulacan, Pampanga, and Nueva Ecija
+          <br><a href="https://www.google.com/maps/dir/Pampanga/Mount+Arayat+National+Park,+Arayat,+Pampanga/@15.0934868,120.6291742,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x3396e5bdf35afced:0xb159ae08fc99633b!2m2!1d120.7629963!2d15.1730832!3e0" target="_blank">Directions can be accessed by clicking here.</a></p>
+          <div class="collage">
+            <img src="assets/mt%20arayat%20national%20park.png" width="70%" height="auto">
+          </div>
+          <h1 class="attraction">Bale Batu</h1>
+          <p class="attraction-p">In the lush forests of Mount Arayat, a majestic stone-structure complex stands. Dubbed the “Little Cambodia of Pampanga,” Bale Batu has been mesmerising its visitors for years now. “Bale Batu”, kapampangan for stone house, is a small stone-structure complex with a temple-like house similar to that of Cambodia’s Angkor Wat. It was built by the late Jesus “Apung Susing” Padilla who spent more than half of his entire life working on the project.
+          <br><a href="https://www.google.com/maps/dir/Pampanga/Bale+Batu,+Arayat,+Pampanga/@15.1112978,120.5785516,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x3396ef5cf9f4d265:0x8ec5c24166e49b51!2m2!1d120.7004195!2d15.1903595!3e0" target="_blank">Directions can be accessed by clicking here.</a></p>
+          <div class="collage">
+            <img src="assets/bale%20batu.png" width="70%" height="auto" > </div>
+          </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Tourist Spots</h3>
+            <p>Be ready for all the stunning sceneries Arayat, Pampanga has in store for you!</p>
+            <br><br>
+            <a onclick="togglePopup8()">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-9">
+        <div class="popup" id="popup-9">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup9()">&times;</div>
+          <h1 class="culture"> Culture & Tradition</h1>
+          <p class="culture-p"> Arayat has delicacies created and made by their fellow natives. One of their specialties is Baruya, which looks like a potato pancake but is made of papaya and small shrimp instead of potatoes. In Arayat, people are very sociable with one another. People usually leave their homes to spend their free time with their friends. Instead of watching TV and playing video games, most kids would play traditional Filipino games like sipa, piko, luksong baka in the streets near their homes. Some would play basketball in the public basketball court, while others would catch and breed roosters so their parents would have something to use for their sabong (cock fight) habits.</p>
+          <img class="grid" 
+         src="assets/arayat%20culture.png" width= "35%" height="auto">
+        </div>
+      </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Culture of Arayat</h3>
+            <p>In Arayat, people are very sociable with one another. People usually leave their homes to spend their free time with their friends. Instead of watching TV and playing video...</p>
+            <a onclick="togglePopup9()">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </div>
+  <br>
+  <br>
+                                               <!--BACOLOR PAMPANGA-->
+  <div class="section-main" id="bacolor">
+    <div class="container">
+      <div class="popup" id="popup-10">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup10()">&times;</div>
+          <h1>Bacolor</h1>
+          <p> Province of Pampanga <br> </br> Bacolor is a landlocked municipality in the coastal province of Pampanga. The municipality has a land area of 71.70 square kilometers or 27.68 square miles, accounting for 3.58 percent of Pampanga's total area. According to the 2020 Census, its population was 48,066 people. This represented 1.97 percent of the total population of Pampanga province, or 0.39 percent of the total population of the Central Luzon region. Based on these figures, the population density is calculated to be 670 inhabitants per square kilometer or 1,736 inhabitants per square mile.</p>
+          <div class="image">
+            <img src="assets/bacolor%20about.png" width="70%" height="auto" >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>About Bacolor</h3>
+            <p>Its population was 48,066 people. This represented 1.97 percent of the total population of Pampanga province, or 0.39 percent of the total population of the Central Luzon region...</p>
+            <a onclick="togglePopup10()">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-11">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup11()">&times;</div>
+          <h1 class="attraction-h">Places you must visit</h1>
+          <br>
+          <h1 class="attraction">Xevera Bacolor Eco Park</h1>
+          <p class="attraction-p"> Xevera Bacolor Eco Park is one of the top rated place listed as Park in Bacolor. It offers stunning views of different sceneries of the beauty nature has to offer.
+          <br><a href="https://www.google.com/maps/dir/Pampanga/Xevera+Bacolor+Eco+Park,+Bacolor,+Pampanga/@15.0945297,120.5909093,14z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x3396f394b82053f1:0xfd91abe58317ce46!2m2!1d120.5964364!2d15.1000084!3e0" target="_blank">Directions can be accessed by clicking here.</a></p>
+           <div class="collage">
+            <img src="assets/xevera.png" width="70%" height="auto" > </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Tourist Spots</h3>
+            <p>Come and Visit all the wonderful attractions Bacolor, Pampanga has to offer<br> <br></p>
+            <br><br>
+            <a onclick="togglePopup11()">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-12">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup12()">&times;</div>
+          <h1 class="culture"> Culture & Tradition</h1>
+          <p class="culture-p">This Good Friday procession in Bacolor is one of the most solemn, a perfect example of a traditional Filipino prusisyon with nothing but voices praying the holy rosary and solemn songs in between. While the Makatapak Festival (Barefoot Festival) is a street dancing competition in which competing groups colorfully dance barefoot along the processional route or "paglimbunan." It is commemorated at the town fiesta in November. "Makatapak" means "barefooted" in Kapampangan, and one of the highlights of Bacolor's town fiesta is the Miss Bacolor Pageant, which showcases the town's rich culture.</p> 
+          <img class="grid"
+         src="assets/bacolor culture.png" width= "35%" height="auto">
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Culture of Bacolor</h3>
+            <p>This Good Friday procession in Bacolor is one of the most solemn, a perfect example of a traditional Filipino prusisyon with nothing but voices praying the holy rosary and solemn songs in between...</p>
+            <a onclick="togglePopup12()">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+                                               <!--CANDABA PAMPANGA-->
+  <div class="section-main" id="candaba">
+    <div class="container">
+      <div class="popup" id="popup-13">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup13()">&times;</div>
+          <h1>Candaba</h1>
+          <p>Province of Pampanga <br> </br> Candaba is a landlocked municipality in Pampanga's coastal province. The municipality has a land area of 176.40 square kilometers (68.11 square miles), accounting for 8.81 percent of the total area of Pampanga. The population was 119,497 according to the 2020 Census. This accounted for 4.90 percent of the total population of Pampanga province and 0.96 percent of the total population of Central Luzon. Based on these figures, the population density is calculated to be 677 people per square kilometer or 1,754 people per square mile.</p>
+          <div class="image">
+            <img src="assets/candaba%20about.png" width="70%" height="auto" >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>About Candaba</h3>
+            <p>Candaba is a municipality in Pampanga's coastal province. The municipality has a land area of 176.40 square kilometers, accounting for 8.81 percent of the total area of Pampanga...</p>
+            <a onclick="togglePopup13()">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-14">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup14()">&times;</div>
+          <h1 class="attraction-h">Places you must visit</h1>
+          <br>
+          <h1 class="attraction">Pinak paligue</h1>
+          <p class="attraction-p"> A place where you can enjoy road trips from baliwag to candaba, stop over to experience sidewalk foodstands and more!
+          <br><a href="https://www.google.com/maps/dir/Pampanga/Pinak+paligue+Candaba+Pampanga+(Makaka+Tea+pid,+rafa's+burger,+emkat+foodhub),+Candaba+-+Baliuag+Road,+Candaba,+Pampanga/@15.0454018,120.6834383,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x3396fdbecee5354b:0xd37fa78913f2bdda!2m2!1d120.8613357!2d15.0633239!3e0" target="_blank">Directions can be accessed by clicking here.</a></p>
+            <div class="collage">
+              <img src="assets/pinak%20paligue.png" width="70%" height="auto" >
+            </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Tourist Spots</h3>
+            <p>Be ready for all the stunning sceneries Candaba, Pampanga has in store for you!</p>
+            <br><br>
+            <a onclick="togglePopup14()">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-15">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup15()">&times;</div>
+          <h1 class="culture"> Culture & Tradition</h1>
+          <p class="culture-p">Candabeños had their own culture, commerce, and   industries, which were primarily farming and fishing. Every year, migrant wild ducks and other bird wildlife flock to Candaba to escape the harsh winter winds of China and Siberia. The popular unimitatable burong isda, a distinct Kapampangan fermented delicacy  made from the best catfish or mudfish as only Candaba can produce.
+         </p>
+         <img class="grid" 
+         src="assets/candaba%20culture.png" width= "35%" height="auto">
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Culture of Candaba</h3>
+            <p>Candabeños had their own culture, commerce, and   industries, which were primarily farming and fishing. Every year, migrant wild ducks and other bird wildlife flock to Candaba to escape...</p>
+            <a onclick="togglePopup15()">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+                                              <!--FLORIDA PAMPANGA-->
+  <div class="section-main" id="floridablanca">
+    <div class="container">
+      <div class="popup" id="popup-16">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup16()">&times;</div>
+          <h1>Florida Blanca</h1>
+          <p> Province of Pampanga <br></br> Floridablanca is a landlocked municipality in Pampanga's coastal province. The municipality has a land area of 175.48 square kilometers (67.75 square miles), accounting for 8.77 percent of the total area of Pampanga. According to the 2020 Census, its population was 135,542. This accounted for 5.56 percent of the total population of Pampanga province, or 1.09 percent of the Central Luzon region's total population. Based on these figures, the population density is calculated to be 772 people per square kilometer or 2,001 people per square mile. </p>
+          <div class="image">
+            <img src="assets/florida%20about.png" width="70%" height="auto" >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>About Florida Blanca</h3>
+            <p>A landlocked municipality in Pampanga's coastal province. The municipality has a land area of 175.48 square kilometers, accounting for 8.77 percent of the total area</p>
+            <a onclick="togglePopup16()">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-17">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup17()">&times;</div>
+          <h1 class="attraction-h">Places you must visit</h1>
+          <br>
+          <h1 class="attraction">Nabuclod mountain view</h1>
+          <p class="attraction-p">An amazing view on top where you can see the town and the city from above. A nice place to relieve stress where you can do leisure activities such as a picnic or riding a bike throughout the area.
+          <br><a href="https://www.google.com/maps/dir/Pampanga/Nabuclod+Mountain+Views,+Floridablanca,+Pampanga/@15.0476836,120.4786967,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x33966142f4c0fa63:0xf08acdf9b9c51a8e!2m2!1d120.4388042!2d15.0129836!3e0" target="_blank">Directions can be accessed by clicking here.</a></p>
+          <div class="collage">
+            <img src="assets/nabuklod%20mountain.png" width="70%" height="auto" >
+          </div>
+          <h1 class="attraction">Palakol River</h1>
+          <p class="attraction-p">Palakol River is located on the northeastern part of Floridablanca. A popular hangout place with rocky beaches, swimming & rentable thatched huts for picnicking around the area.<br><a href="https://www.google.com/maps/dir/Pampanga/Palakol+River,+Subic+-+Clark+-+Tarlac+Expressway,+Floridablanca,+Pampanga/@15.0478573,120.493603,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x339661d98c4a7425:0xcafd4f9bc5be83a3!2m2!1d120.4686168!2d15.0136824!3e08" target="_blank">Directions can be accessed by clicking here.</a></p>
+          <div class="collage">
+            <img src="assets/palakol%20river.png" width="70%" height="auto" > 
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Tourist Spots</h3>
+            <p>Come and Visit all the wonderful attractions Florida Blanca, Pampanga has to offer</p>
+            <br><br>
+            <a onclick="togglePopup17()">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-18">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup18()">&times;</div>
+          <h1 class="culture"> Culture & Tradition</h1>
+          <p class="culture-p"> In Floridablanca, Pampanga, there is a tradition known as "Salibatbat," which is a Kapampangan term for doing penance through self-wounding and flagellation on Maundy Thursday and Good Friday. Despite being discouraged, this tradition continues... Take the time to watch it in Cabancalan, Floridablanca, Pampanga, as it is a part of the rich and diverse Kapampangan culture.</p>
+          <img class="grid" 
+         src="assets/florida%20culture.png" width= "35%" height="auto">
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Culture of Florida Blanca</h3>
+            <p>In Floridablanca, Pampanga, there is a tradition known as "Salibatbat," which is a Kapampangan term for...</p>
+            <a onclick="togglePopup18()">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+                                              <!--GUAGUA PAMPANGA-->
+  <div class="section-main" id="guagua">
+    <div class="container">
+      <div class="popup" id="popup-19">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup19()">&times;</div>
+          <h1>Guagua</h1>
+          <p> Province of Pampanga<br></br> Guagua is a landlocked municipality in Pampanga's coastal province. The municipality covers 48.67 square kilometers (18.79 square miles), accounting for 2.43 percent of Pampanga's total land area. According to the 2020 Census, its population was 128,893. This accounted for 5.29 percent of the total population of Pampanga province, or 1.04 percent of the Central Luzon region's total population. Based on these figures, the population density is calculated to be 2,648 people per square kilometer or 6,860 people per square mile.</p>
+          <div class="image">
+            <img src="assets/guagua%20about.png" width="70%" height="auto" >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>About Guagua</h3>
+            <p>This accounted for 5.29 percent of the total population of Pampanga province, or 1.04 percent of the Central Luzon region's total population...</p>
+            <a onclick="togglePopup19()">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-20">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup20()">&times;</div>
+          <h1 class="attraction-h">Places you must visit</h1>
+          <br>
+          <h1 class="attraction">Santiago Apostol Church</h1>
+          <p class="attraction-p"> The baroque-inspired Betis Church was built around 1660 under Father José de la Cruz. The initial structure was made of light materials, mainly wood and stucco. Fire broke out within the church several times due to these light materials, so it was finally rebuilt with concrete in 1770.<br><a href="s,+Guagua,+2003+Pampanga/@15.0152126,120.5986466,12.48z/data=!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x339658be2106561f:0xb0341a6cd2cfd005!2m2!1d120.6430785!2d14.9754757!3e0" target="_blank">Directions can be accessed by clicking here.</a></p>
+           <div class="collage">
+            <img src="assets/apostol%20church.png" width="70%" height="auto" > </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Tourist Spots</h3>
+            <p>Come and Visit all the wonderful attractions Guagua, Pampanga has to offer</p>
+            <br><br>
+            <a onclick="togglePopup20()">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-21">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup21()">&times;</div>
+          <h1 class="culture"> History of Guagua</h1>
+          <p class="culture-p"> According to records dating back to 1590, Wawa (Lán-nâng: Hua-hua), which means "river mouth" (Kapampangan: alua or bukana), was the earliest recorded form of the town's name. The town is strategically located along a river that was important for trade and transportation during the precolonial period. Wawa was already a prosperous settlement when Spanish colonists took control of it in 1561, renaming it Guagua, a Hispanised form of the original name. Archeological artifacts discovered in a nearby town confirmed the existence of a prehistoric community in Guagua.</p>
+          <img class="grid"
+         src="assets/Guagua%20history.png" width= "35%" height="auto">
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>History of Guagua</h3>
+            <p>According to records dating back to 1590, Wawa (Lán-nâng: Hua-hua), which means "river mouth" (Kapampangan: alua or bukana), was the earliest recorded form of the town's name...</p>
+            <a onclick="togglePopup21()">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+                                                <!--LUBAO PAMPANGA-->
+  <div class="section-main" id="lubao">
+    <div class="container">
+      <div class="popup" id="popup-22">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup22()">&times;</div>
+          <h1>Lubao</h1>
+          <p>Province of Pampanga<br></br>Lubao is a coastal municipality in the Pampanga province. The municipality has a land area of 155.77 square kilometers or 60.14 square miles, accounting for 7.78 percent of the total area of Pampanga. According to the 2020 Census, its population was 173,502. This accounted for 7.12 percent of the total population of Pampanga province, or 1.40 percent of the Central Luzon region's total population. Based on these figures, the population density is calculated to be 1,114 people per square kilometer or 2,885 people per square mile.</p>
+          <div class="image">
+            <img src="assets/lubao%20about.png" width="70%" height="auto" >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>About Lubao</h3>
+            <p>Lubao is a coastal municipality in the Pampanga province. The municipality has a land area of 155.77 square kilometers or 60.14 square miles, accounting for 7.78 percent of the total area of Pampanga...</p>
+            <a onclick="togglePopup22()">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-23">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup23()">&times;</div>
+          <h1 class="attraction-h">Places you must visit</h1>
+          <br>
+          <h1 class="attraction">Lubao Bamboo Hub</h1>
+          <p class="attraction-p">The eco-tourism destination, which originally started as a development site in 2010. As the bamboo village is situated near Gumain River, visitors may also experience a relaxing boat ride, available for all visitors and tourist.
+          <br><a href="https://www.google.com/maps/dir/Pampanga/Bamboo+Hub,+Lubao,+Pampanga/@14.9926435,120.5451809,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x33965c1775efbd23:0x5ee67ada1a693119!2m2!1d120.5999058!2d14.9043296!3e0" target="_blank"></a>Directions can be accessed by clicking here.</p>
+          <div class="collage">
+            <img src="assets/lubao%20hub.png" width="70%" height="auto" > 
+          </div>
+          <h1 class="attraction">St Augustine Church</h1>
+          <p class="attraction-p">It is also known as the Lubao Church, is a 17th-century Neo-classic, Spanish stone at Brgy. San Nicolas 1st, Lubao, Pampanga, Philippines. In 1952, a historical marker bearing a brief history of the structure was installed on the facade of the church by the Historical Committee of the Philippines.
+            <br><a href="https://www.google.com/maps/dir/Pampanga/St.+Augustine+Parish+Church,+Lubao,+Pampanga/@15.0096598,120.5567599,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x33965ec0dbbfd54b:0xa5a7885045fea29a!2m2!1d120.6017041!2d14.9383699!3e0" target="_blank"></a>Directions can be accessed by clicking here.</p>
+             <div class="collage">
+            <img src="assets/st%20agustine.png" width="70%" height="auto" > </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Tourist Spots</h3>
+            <p>Come and Visit all the wonderful attractions Lubao, Pampanga has to offer</p>
+            <br><br>
+            <a onclick="togglePopup23()">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-24">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup24()">&times;</div>
+          <h1 class="culture"> Culture & Tradition</h1>
+          <p class="culture-p"><br> <br> Lubao, as the Cradle of Kapampangan Civilization, brims with antiquity in the form of timeless monuments such as Catholicism, devout people, and good governance. Lubao is home to the majority of Roman Catholics, as it was the first Augustinian missionary center in Central and Northern Luzon.</p>
+          <img class="grid" 
+         src="assets/lubao%20culture.png" width= "35%" height="auto">
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Culture of Lubao</h3>
+            <p>Lubao, as the Cradle of Kapampangan Civilization, brims with antiquity in the form of timeless monuments such as Catholicism..</p>
+            <a onclick="togglePopup24()">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+                                            <!--MABALACAT PAMPANGA-->
+  <div class="section-main" id="mabalacat">
+    <div class="container">
+      <div class="popup" id="popup-25">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup25()">&times;</div>
+          <h1>Mabalacat</h1>
+          <p> Province of Pampanga<br></br>Mabalacat is a landlocked component city in Pampanga's coastal province. The city has a land area of 82.20 square kilometers or 31.74 square miles, accounting for 4.11 percent of the total area of Pampanga. According to the 2020 Census, its population was 293,244. This accounted for 12.03 percent of the total population of Pampanga province, or 2.36 percent of the Central Luzon region's total population. Based on these figures, the population density is calculated to be 3,567 people per square kilometer or 9,239 people per square mile.</p>
+          <div class="image">
+            <img src="assets/mabalacat%20about.png" width="70%" height="auto" >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>About Mabalacat</h3>
+            <p>Mabalacat is a landlocked component city in Pampanga's coastal province. The city has a land area of 82.20 square kilometers or 31.74 square miles, accounting for 4.11 percent of the total area of Pampanga. According to the 2020 Census, its population was 293,244...</p>
+            <a onclick="togglePopup25()">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-26">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup26()">&times;</div>
+          <h1 class="attraction-h">Places you must visit</h1>
+            <br>
+          <h1 class="attraction">Haduan Falls</h1>
+          <p class="attraction-p">Mabalacat Haduan Falls is located in Sitio Haduan, Mabalacat City. It is one of the places where you can spend your time just admiring the beauty nature has to offer. A lot of activities such as rock climbing, and swimming through vast chilly waters awaits you as you visit this wonderful attraction.
+          <br><a href="https://www.google.com/maps/dir/Pampanga/Haduan+Falls,+unnamed+street,+Mabalacat,+Pampanga/@15.1364657,120.5143507,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x339693e12f5a7b27:0xd069006965d37d1c!2m2!1d120.478339!2d15.190023!3e0" target="_blank">Directions can be accessed by clicking here.</a></p>
+          <div class="collage">
+            <img src="assets/haduan%20falls.png" width="70%" height="auto" >
+          </div>
+          <h1 class="attraction">Nayong Pilipino</h1>
+          <p class="attraction-p">It is a cultural theme park featuring Filipino culture in Mabalacat, Pampanga. This park is essentially a miniature representation of the diverse Philippines and Philippine culture, all in one place. They offer different artifacts, places, and other physical attractions to show us how beautiful the Philippines’ Culture really is.<br><a href="https://www.google.com/maps/dir/Pampanga/Nayong+Pilipino,+Clark+Freeport,+Mabalacat,+Pampanga/@15.1353501,120.5123272,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x3396ed4b0fd869d5:0x6afab432f2c08334!2m2!1d120.530074!2d15.193699!3e0" target="_blank"></a>Directions can be accessed by clicking here.</p>
+           <div class="collage">
+            <img src="assets/nayong%20pilipino.png" width="70%" height="auto" > </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Tourist Spots</h3>
+            <p>Be ready for all the stunning sceneries Mabalacat, Pampanga has in store for you!</p>
+            <br><br>
+            <a onclick="togglePopup26()">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-27">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup27()">&times;</div>
+          <h1 class="culture">Culture & Tradition</h1>
+          <p class="culture-p">People in Mabalacat always celebrate Caragan Festival, which is held every third week of February as part of the month-long celebration of Mabalacat, Pampanga's town fiesta. This is named after a Mabalacat town chieftain who is an Aeta native married to a Mabalaquena named Laureana Tolentino. The celebration of traditional Aeta culture is the event's highlight. Pastorella, also known as Misa de Pastores, is also celebrated in honor of the shepherds at the birth of Jesus Christ. This is a collection of Latin hymns from the nine-day Christmas Masses.</p>
+          <img class="grid" 
+         src="assets/mabalacat%20culture.png" width= "35%" height="auto">
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Culture of Mabalacat</h3>
+            <p>People in Mabalacat always celebrate Caragan Festival, which is held every third week of February as part of the month-long celebration of Mabalacat, Pampanga's town fiesta.</p>
+            <a onclick="togglePopup27()">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+                                      <!--MAGALANG PAMPANGA-->
+  <div class="section-main" id="magalang">
+    <div class="container">
+      <div class="popup" id="popup-28">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup28()">&times;</div>
+          <h1>Magalang</h1>
+          <p>Province of Pampanga<br></br> Magalang is a landlocked municipality in Pampanga's coastal province. The municipality has a land area of 97.32 square kilometers or 37.58 square miles, accounting for 4.86 percent of the total area of Pampanga. The population was 124,188 according to the 2020 Census. This accounted for 5.09 percent of the total population of Pampanga province and 1.00 percent of the total population of Central Luzon. Based on these figures, the population density is calculated to be 1,276 people per square kilometer or 3,305 people per square mile.</p>
+          <div class="image">
+          <img src="assets/magalang%20about.png" width="70%" height="auto" >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>About Magalang</h3>
+            <p>Magalang is a landlocked municipality in Pampanga's coastal province. The municipality has a land area of 97.32 square kilometers or 37.58 square miles, accounting for 4.86 percent of the total area of Pampanga...</p>
+            <a onclick="togglePopup28()">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-29">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup29()">&times;</div>
+          <h1 class="attraction-h">Places you must visit</h1>
+          <br>
+          <h1 class="attraction">Abe’s Farm Resort</h1>
+          <p class="attraction-p"> A place nestled at the foothills of Mt. Arayat in the heart of Pampanga. You may relax and stay overnight in air conditioned Ifugao huts; have a therapeutic spa treatment, and enjoy the culinary delights of the gourmet province of Pampanga.
+          <br><a href="https://www.google.com/maps/dir/Pampanga/Abe's+Farm,+Magalang,+Pampanga/@15.1516054,120.5812627,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x3396ef514f42808f:0x4bda5449b5a5c1b1!2m2!1d120.705893!2d15.227107!3e0" target="_blank">Directions can be accessed by clicking here.</a></p>
+          <div class="collage">
+            <img src="assets/abes%20farm.png" width="70%" height="auto" >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Tourist Spots</h3>
+            <p>Be ready for all the stunning sceneries Magalang, Pampanga has in store for you!</p>
+            <br><br>
+            <a onclick="togglePopup29()">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-30">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup30()">&times;</div>
+          <h1 class="culture"> Culture & Tradition</h1>
+          <p class="culture-p">Magalang Pampanga is one of the developing towns in country’s Culinary Capital which majority of its land area is agricultural evident in the presence of the oldest agricultural school in the region, the Pampanga Agricultural College which is now Pampanga State Agricultural University(PSAU), a center for agri-based education in the province. With rich agricultural land, this little town is producing fresh and quality produce such as rice, fruits and vegetables.</p>
+          <img class="grid" 
+         src="assets/magalang%20culture.png" width= "35%" height="auto">
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Culture of Magalang</h3>
+            <p>Magalang Pampanga is one of the developing towns in country’s Culinary Capital which majority of its land area is agricultural evident in the presence of the oldest agricultural school in the region</p>
+            <a onclick="togglePopup30()">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+                                             <!--MASANTOL PAMPANGA-->
+  <div class="section-main" id="masantol">
+    <div class="container">
+      <div class="popup" id="popup-31">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup31()">&times;</div>
+          <h1>About Masantol</h1>
+          <p>Province of Pampanga<br></br>Masantol is a landlocked municipality in Pampanga's coastal province. The municipality covers 48.25 square kilometers (18.63 square miles), accounting for 2.41 percent of Pampanga's total land area. The population was 57,990 according to the 2020 Census. This accounted for 2.38 percent of the total population of Pampanga province, or 0.47 percent of the Central Luzon region's total population. Based on these figures, the population density is calculated to be 1,202 people per square kilometer or 3,113 people per square mile. </p>
+          <div class="image">
+          <img src="assets/masantol%20about.png" width="70%" height="auto" >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>About Masantol</h3>
+            <p>Masantol is a landlocked municipality in Pampanga's coastal province. The municipality covers 48.25 square kilometers, accounting for 2.41 percent of Pampanga's total land area...</p>
+            <a onclick="togglePopup31()">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-32">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup32()">&times;</div>
+          <h1 class="attraction-h">Places you must visit</h1>
+          <br>
+          <h1 class="attraction">Lakeview Memorial Park</h1>
+          <p class="attraction-p">Lakeview is a 5-hectare flood-free memorial park located in Kalsadang Bayu, Masantol, Pampanga. Surrounded by lush landscapes, it is envisioned to be a sanctuary. A beautiful and serene place to honor the memories of departed loved ones.
+          <br><a href="https://www.google.com/maps/dir/Pampanga/Lakeview+Memorial+Park,+Kalsadang+Bayu,+Masantol,+Pampanga/@15.0035583,120.6193762,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x33965b25fa24c351:0x13ec23465e49ece2!2m2!1d120.709689!2d14.8976233!3e0" target="_blank">Directions can be accessed by clicking here</a>.</p>
+          <div class="collage">
+            <img src="assets/lake%20view%20memorial%20park.png" width="70%" height="auto"> 
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Tourist Spots</h3>
+            <p>Come and Visit all the wonderful attractions Masantol, Pampanga has to offer</p>
+            <br><br>
+            <a onclick="togglePopup32()">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-33">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup33()">&times;</div>
+          <h1 class="culture">History of Masantol</h1>
+          <p class="culture-p"><br> <br> Masantol, originally a part of the ancient Macabebe town, was founded as a separate town and renamed San Miguel on May 1, 1878, consisting of the former Macabebe barrios of Bebe, Bulakus, Kaingin, and Nigi. For a time, it was known as San Miguel Masantol, until popular usage reverted it to its original name.</p>
+          <img class="grid"
+         src="assets/masantol%20history.png" width= "35%" height="auto">
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>History of Masantol</h3>
+            <p>Masantol, originally a part of the ancient Macabebe town, was founded as a separate town and renamed San Miguel on May 1, 1878...</p>
+            <a onclick="togglePopup33()">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+                                              <!--MACABEBE PAMPANGA-->
+  <div class="section-main" id="macabebe">
+    <div class="container">
+      <div class="popup" id="popup-34">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup34()">&times;</div>
+          <h1>Macabebe</h1>
+          <p>Province of Pampanga<br></br> Macabebe is a coastal municipality in the Pampanga province. The municipality has a land area of 105.16 square kilometers or 40.60 square miles, accounting for 5.25 percent of the total area of Pampanga. The population was 78,151 according to the 2020 Census. This accounted for 3.21 percent of the total population of Pampanga province and 0.63 percent of the total population of Central Luzon. Based on these figures, the population density is calculated to be 743 people per square kilometer or 1,925 people per square mile.</p>
+          <div class="image">
+          <img src="assets/macabebe%20about.png" width="70%" height="auto" >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>About Macabebe</h3>
+            <p>Macabebe is a coastal municipality in the Pampanga province. The municipality has a land area of 105.16 square kilometers or 40.60 square miles, accounting for 5.25 percent of the total area of Pampanga.</p>
+            <a onclick="togglePopup34()">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-35">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup35()">&times;</div>
+          <h1 class="attraction-h">Places you must visit</h1>
+            <br>
+          <h1 class="attraction">Pampanga River</h1>
+          <p class="attraction-p">The ancient town of Macabebe owes its importance to its location along the Rio Grande de la Pampanga or Pampanga River. The Pampanga River is of great importance to Macabebe. Fishing is still a major source of sustenance and income for its residents.
+          <br><a href="https://www.google.com/maps/dir/Pampanga/Pampanga+River/@15.142048,120.6061924,11z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x33965b3590a78707:0xe875e34dcee6f49d!2m2!1d120.8712172!2d15.2710823!3e0" target="_blank">Directions can be accessed by clicking here</a></p>
+          <div class="collage">
+            <img src="assets/pampanga%20river.png" width="70%" height="auto" >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Tourist Spots</h3>
+            <p>Come and Visit all the wonderful attractions Macabebe, Pampanga has to offer</p>
+            <br><br>
+            <a onclick="togglePopup35()">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-36">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup36()">&times;</div>
+          <h1 class="culture"> Culture & Tradition</h1>
+          <p class="culture-p"><br> <br> Macabebe Pampanga has a rich history and treasures. Its town hall and churches demonstrate the wealth of the town's history. Each barangay has its own fiesta, but the town's fiesta is held annually on September 10 in honor of San Nicolas de Tolentino, the town's patron saint.</p>
+          <img class="grid" 
+         src="assets/macabebe%20culture.png" width= "35%" height="auto">
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Culture of Macabebe</h3>
+            <p>Macabebe Pampanga has a rich history and treasures. Its town hall and churches demonstrate the wealth of the town's history.</p>
+            <a onclick="togglePopup36()">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+                                               <!--MEXICO PAMPANGA-->
+  <div class="section-main" id="mexico">
+    <div class="container">
+      <div class="popup" id="popup-37">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup37()">&times;</div>
+          <h1>Mexico</h1>
+          <p>Province of Pampanga<br></br> Mexico is a landlocked municipality in Pampanga's coastal province. The municipality has a land area of 117.41 square kilometers or 45.33 square miles, accounting for 5.87 percent of the total area of Pampanga. According to the 2020 Census, its population was 173,403. This accounted for 7.11 percent of the total population of Pampanga province, or 1.40 percent of the Central Luzon region's total population. Based on these figures, the population density is calculated to be 1,477 people per square kilometer or 3,825 people per square mile. </p>
+          <div class="image">
+          <img src="assets/mexico%20about.png" width="70%" height="auto" >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>About Mexico</h3>
+            <p>A municipality in Pampanga's coastal province. The municipality has a land area of 117.41 square kilometers or 45.33 square miles, accounting for 5.87 percent of the total area of Pampanga. According to the 2020 Census, its population was 173,403.</p>
+            <a onclick="togglePopup37()">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-38">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup38()">&times;</div>
+          <h1 class="attraction-h">Places you must visit</h1>
+            <br>
+          <h1 class="attraction">Lakeshore</h1>
+          <p class="attraction-p"> The Lakeshore is the first master-planned community in the country to offer residents a world of secluded lakeside luxury, 250 hectares of prime land crowned with a magnificent 12 hectare man-made lake. Residents need not go far to enjoy adventure-filled activities like fishing, sailing and kayaking.
+          <br><a href="https://www.google.com/maps/dir/Pampanga/Lakeshore+Pampanga,+Mexico,+Pampanga/@15.0613047,120.623237,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x3396f0e0dd7728a3:0xd71f926f138dd3b!2m2!1d120.670348!2d15.0948324!3e0" target="_blank">Directions can be accessed by clicking here.</a></p>
+          <div class="collage">
+            <img src="assets/lakeshore.png" width="70%" height="auto" >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Tourist Spots</h3>
+            <p>Be ready for all the stunning sceneries Mexico, Pampanga has in store for you!</p>
+            <br><br>
+            <a onclick="togglePopup38()">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-39">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup39()">&times;</div>
+          <h1 class="culture"> Culture & Tradition</h1>
+          <p class="culture-p"> There are various religious and cultural traditions in Mexico Pampanga. One of these is the feast of Virgen de la Consolacion y Correa (Our Lady of Consolation and Cord; Patroness of the Augustinian Order), which they receive blessed cinctures imitating the gesture of the Virgin Mary giving her own cincture to Saint Monica during her grief and sorrow at her son's misgivings.</p>
+          <img class="grid" 
+         src="assets/mexico%20culture.png" width= "35%" height="auto">
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Culture of Mexico</h3>
+            <p>There are various religious and cultural traditions in Mexico Pampanga. One of these is the feast of Virgen de la Consolacion y Correa</p>
+            <a onclick="togglePopup39()">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+                                        <!--MINALIN PAMPANGA-->
+  <div class="section-main" id="minalin">
+    <div class="container">
+      <div class="popup" id="popup-40">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup40()">&times;</div>
+          <h1>Minalin</h1>
+          <p>Province of Pampanga<br></br> Minalin is a landlocked municipality in Pampanga's coastal province. The municipality covers 48.27 square kilometers (18.64 square miles), accounting for 2.41 percent of Pampanga's total land area. The population was 48,380 according to the 2020 Census. This accounted for 1.98 percent of the total population of Pampanga province, or 0.39 percent of the total population of Central Luzon. Based on these figures, the population density is calculated to be 1,002 people per square kilometer or 2,595 people per square mile.</p>
+          <div class="image">
+            <img src="assets/minalin%20about.png" width="70%" height="auto" >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>About Minalin</h3>
+            <p>Minalin is a landlocked municipality in Pampanga's coastal province. The municipality covers 48.27 square kilometers, accounting for 2.41 percent of Pampanga's total land area.</p>
+            <a onclick="togglePopup40()">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-41">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup41()">&times;</div>
+          <h1 class="attraction-h">Places you must visit</h1>
+          <br>
+          <h1 class="attraction">Sunset Park</h1>
+          <p class="attraction-p">It's the best spot to snap some wonderful images and hang out with friends and family. Rest your eyes from the look of modernization to this breathtaking scenery. It's best to visit this place at the right time as the sunset starts in the golden hours of the day.
+          <br><a href="https://www.google.com/maps/dir/Pampanga/Sunset+Park,+Minalin,+Pampanga/@15.0276201,120.6177854,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x339659df04b4e07d:0xa1e074ec5042e0e6!2m2!1d120.6855933!2d14.9744917!3e0" target="_blank">Directions can be accessed by clicking here.</a></p>
+          <div class="collage">
+            <img src="assets/sunset%20park.png" width="70%" height="auto" >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Tourist Spots</h3>
+            <p>Be ready for all the stunning sceneries Minalin, Pampanga has in store for you!</p>
+            <br><br>
+            <a onclick="togglePopup41()">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-42">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup42()">&times;</div>
+          <h1 class="culture">History of Minalin</h1>
+          <p class="culture-p"><br> <br>Minalin's name was derived from the legend "minalis la ding dutung, minalis ya ing pisamban" (the lumber moved, and so must the church). Stocks of lumber at Sta. Floods carried Maria to a hilly Burol for church construction. Capitan Diego Tolentino scribbled "minalis," and thus the name Minalin was born.</p>
+          <img class="grid"
+         src="assets/minalin%20history.png" width= "35%" height="auto">
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+           <h3>History of Minalin</h3>
+            <p>Minalin's name was derived from the legend "minalis la ding dutung, minalis ya ing pisamban"...</p>
+            <a onclick="togglePopup42()">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+                                                <!--PORAC PAMPANGA-->
+  <div class="section-main" id="porac">
+    <div class="container">
+      <div class="popup" id="popup-43">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup43()">&times;</div>
+          <h1>Porac</h1>
+          <p>Province of Pampanga<br></br>Porac is a landlocked municipality in Pampanga's coastal province. The municipality has a land area of 314.00 square kilometers (121.24 square miles), accounting for 15.69 percent of the total area of Pampanga. According to the 2020 Census, its population was 140,751. This accounted for 5.77 percent of the total population of Pampanga province, or 1.13 percent of the Central Luzon region's total population. Based on these figures, the population density is calculated to be 448 people per square kilometer or 1,161 people per square mile.</p>
+          <div class="image">
+            <img src="assets/porac%20about.png" width="70%" height="auto" >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>About Porac</h3>
+            <p>The municipality has a land area of 314.00 square kilometers, accounting for 15.69 percent of the total area of Pampanga.</p>
+            <a onclick="togglePopup43()">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-44">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup44()">&times;</div>
+          <h1 class="attraction-h">Places you must visit</h1>
+            <br>
+          <h1 class="attraction">Barundon, Camias View Dec</h1>
+          <p class="attraction-p">Camias view Deck offers a mesmerizing view of Pampanga and Mount Negron located in San Marcelino, Zambales. It is also a place where Mountain bikers go River trekking and trail biking.
+          <br><a href="https://www.google.com/maps/dir/Pampanga/Barundon,+Camias+View+Deck,+Porac,+Pampanga/@15.0701977,120.501815,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x33968a3c7cd4c8e3:0x45147a3c9495eb14!2m2!1d120.4503613!2d15.0465323!3e0" target="_blank">Directions can be accessed by clicking here.</a></p>
+           <div class="collage">
+            <img src="assets/camias%20view.png" width="70%" height="auto" > </div>
+          <br>
+          <h1 class="attraction">Miyamit Falls</h1>
+          <p class="attraction-p">It is an equally popular tourist attraction because Porac is widely-known as a town that has been stricken by Lahar from the 1991 Mt. Pinatubo eruption. Miyamit falls is one of the best spots to regain strength plus the panoramic view of the vast plains of Pampanga.
+          <br><a href="https://www.google.com/maps/dir/Pampanga/Miyamit+Falls,+Porac,+Pampanga/@15.1372766,120.4503875,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x33968eb0c7579321:0xa10539405ce55e0f!2m2!1d120.4195172!2d15.1182505!3e0" target="_blank">Directions can be accessed by clicking here.</a></p>
+           <div class="collage">
+            <img src="assets/miyamit%20falls.png" width="70%" height="auto" > </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Tourist Spots</h3>
+            <p>Come and Visit all the wonderful attractions Porac, Pampanga has to offer</p>
+            <br><br>
+            <a onclick="togglePopup44()">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-45">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup45()">&times;</div>
+          <h1 class="culture">Culture & Tradition</h1>
+          <p class="content-p">Porac has its own festival, the Binulo Festival, where locals demonstrate their indigenous cooking traditions. Visitors to this festival will allow you to sample traditional food popularized by the Aetas. Binulo, which was officially inducted as a local festival in 2005, highlights the cooking of various food items such as rice, fish, pork, chicken, and other seafood in a traditional Binulo method.</p>
+          <img class="grid" 
+         src="assets/porac%20culture.png" width= "35%" height="auto">
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Culture of Porac</h3>
+            <p>Porac has its own festival, the Binulo Festival, where locals demonstrate their indigenous cooking traditions.</p>
+            <a onclick="togglePopup45()">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+                                       <!--SAN FERNANDO PAMPANGA-->
+  <div class="section-main" id="sanfernando">
+    <div class="container">
+      <div class="popup" id="popup-46">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup46()">&times;</div>
+          <h1>San Fernando</h1>
+          <p>Province of Pampanga<br></br> San Fernando is a landlocked component city in Pampanga's coastal province. It is both the provincial capital and the regional center of Central Luzon. The city has a land area of 67.74 square kilometers or 26.15 square miles, accounting for 3.38 percent of the total area of Pampanga. According to the 2020 Census, its population was 354,666 people. This accounted for 14.55 percent of the total population of Pampanga province and 2.86 percent of the total population of Central Luzon. Based on these figures, the population density is calculated to be 5,236 people per square kilometer or 13,563 people per square mile.</p>
+          <div class="image">
+          <img src="assets/san%20fernando%20about.png" width="70%" height="auto" >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>About San Fernando</h3>
+            <p>San Fernando is a landlocked component city in Pampanga's coastal province. It is both the provincial capital and the regional center of Central Luzon.</p>
+            <p>&nbsp<p>
+            <a onclick="togglePopup46()">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-47">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup47()">&times;</div>
+          <h1 class="attraction-h">Places you must visit</h1>
+            <br>
+          <h1 class="attraction">Sky Ranch Pampanga</h1>
+          <p class="attraction-p">The Sky Ranch branch in San Fernando, Pampanga is part of the SM City Pampanga shopping mall complex. The must-visit attraction is the Pampanga Eye Ferris Wheel. At a little over 200 feet, the Pampanga Eye is known as the biggest and tallest ferris wheel in the Philippines. While the ride looks large and shiny in the daytime, the illuminated wheel is even more beautiful at night, dressed in colorful lights.
+          <br><a href="https://www.google.com/maps/dir/Pampanga/Sky+Ranch+Pampanga,+San+Fernando,+Pampanga/@15.0519639,120.628394,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x3396f74443a3f7eb:0x843f173bdb6e7a90!2m2!1d120.696709!2d15.0538968!3e0" target="_blank">Directions can be accessed by clicking here.</a></p>
+           <div class="collage">
+            <img src="assets/sky%20ranch.png" width="70%" height="auto" > </div>
+          <br>
+          <h1 class="attraction">Orchids Garden</h1>
+          <p class="attraction-p">A recreational complex in the City of San Fernando with a modern resort, hotel/motel, event centers and restaurants that one can truly enjoy.<a href="https://www.google.com/maps/dir/Pampanga/The+Orchid+Gardens,+Lazatin+Boulevard,+San+Fernando,+Pampanga/@15.0495867,120.6135365,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x3396f7a8b14591bb:0x600a3fa42ce351d6!2m2!1d120.6766248!2d15.024505!3e0" target="_blank">Directions can be accessed by clicking here.</a></p>
+           <div class="collage">
+            <img src="assets/orchids%20garden.png" width="70%" height="auto" > </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Tourist Spots</h3>
+            <p>Be ready for all the stunning sceneries San Fernando, Pampanga has in store for you!</p>
+            <br><br>
+            <a onclick="togglePopup47()">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-48">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup48()">&times;</div>
+          <h1 class="culture">Culture & Tradition</h1>
+          <p class="culture-p"><br> <br> <br>San Fernando, Pampanga is known as the Christmas Capital of the Philippines because of the lantern production, hence the Paskuhan Village and the Giant Lantern Festival. This has given San Fernando its identity as a festive and lively city. </p>
+          <img class="grid" 
+         src="assets/san%20fernando%20culture.png" width= "35%" height="auto">
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Culture of San Fernando</h3>
+            <p>San Fernando, Pampanga is known as the Christmas Capital of the Philippines because of the lantern production...</p>
+            <a onclick="togglePopup48()">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+                                            <!--SAN LUIS PAMPANGA-->
+  <div class="section-main" id="sanluis">
+    <div class="container">
+      <div class="popup" id="popup-49">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup49()">&times;</div>
+          <h1>San Luis</h1>
+          <p>Province of Pampanga<br></br> San Luis is a landlocked municipality in Pampanga's coastal province. The municipality has a land area of 56.83 square kilometers or 21.94 square miles, accounting for 2.84 percent of the total area of Pampanga. According to the 2020 Census, its population was 58,551. This accounted for 2.40 percent of the total population of Pampanga province, or 0.47 percent of the Central Luzon region's total population. Based on these figures, the population density is calculated to be 1,030 people per square kilometer or 2,669 people per square mile.</p>
+          <div class="image">
+          <img src="assets/san%20luis%20about.png" width="70%" height="auto" >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>About San Luis</h3>
+            <p>San Luis is a landlocked municipality in Pampanga's coastal province. The municipality has a land area of 56.83 square kilometers or 21.94 square miles, accounting for 2.84 percent of the total area of Pampanga...</p>
+            <a onclick="togglePopup49()">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-50">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup50()">&times;</div>
+          <h1 class="attraction-h">Places you must visit</h1>
+            <br>
+          <h1 class="attraction">Garden Of Peace</h1>
+          <p class="attraction-p">Garden of Peace Memorial Park in San Luis, Pampanga is the first flood-free and modern memorial park in its part of the province.
+          <br><a href="https://www.google.com/maps/dir/Pampanga/Garden+Of+Peace,+San+Luis,+Pampanga/@15.0619883,120.6713361,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x3396f91bb4e23e9d:0xbca39f61d8e01f51!2m2!1d120.7926171!2d15.0336909!3e0" target="_blank">Directions can be accessed by clicking here.</a></p>
+           <div class="collage">
+            <img src="assets/garden%20of%20peace.png" width="70%" height="auto" > </div>
+
+          <h1 class="attraction">San Luis Park</h1>
+          <p class="attraction-p">A hangout place especially for couples and children. With wonderful scenery, fresh air and children's play equipment. There are also nice eats on the nearest "bayan" of San Luis with its famous historic San Luis Church.<br><a href="https://www.google.com/maps/dir/Pampanga/San+Luis+Park,+San+Luis,+Pampanga/@15.0460714,120.6698291,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x3396f94520262589:0x14ea170cd935072!2m2!1d120.7897183!2d15.0424175!3e0" target="_blank">Directions can be accessed by clicking here.</a></p>
+           <div class="collage">
+            <img src="assets/san%20luis%20park.png" width="70%" height="auto" > </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Tourist Spots</h3>
+            <p>Come and Visit all the wonderful attractions San Luis, Pampanga has to offer</p>
+            <br><br>
+            <a onclick="togglePopup50()">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-51">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup51()">&times;</div>
+          <h1 class="culture">History of San Luis</h1>
+          <p class="culture-p">San Luis town was originally called Cabagsa or Cabagsac, a contraction of “cabag” (fruit bats) and “bagsac”, hence a place where fruit bats come to roost. It was later known as San Nicolas de Cabagsa to honor the memory of one of its cura, Fray Nicolas de Orduno. Dna is credited with the final name, San Luis. Luisa, the wife of a lawyer who represented the town of Santa Ana (then Pinpin) in claiming a parcel of land that was disputed by the neighboring town. San Luis Gonzaga (St. Aloysius Gonzaga, 1568-1591), a blue-blooded Jesuit saint who died at the age of 23, was the inspiration for the town's name. On April 25, the town holds its fiesta.</p>
+          <img class="grid"
+         src="assets/apalit%20culture.png" width= "35%" height="auto">
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>History of San Luis</h3>
+            <p>It was later known as San Nicolas de Cabagsa to honor the memory of one of its cura, Fray Nicolas de Orduno. Dna is credited with the final name, San Luis...</p>
+            <a onclick="togglePopup51()">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+                                           <!--SAN SIMON PAMPANGA-->
+  <div class="section-main" id="sansimon">
+    <div class="container">
+      <div class="popup" id="popup-52">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup52()">&times;</div>
+          <h1>San Simon</h1>
+          <p>Province of Pampanga<br></br> San Simon is a landlocked municipality in Pampanga's coastal province. The municipality has a land area of 57.37 square kilometers or 22.15 square miles, accounting for 2.87 percent of the total area of Pampanga. According to the 2020 Census, its population was 59,182. This accounted for 2.43 percent of the total population of Pampanga province, or 0.48 percent of the Central Luzon region's total population. Based on these figures, the population density is calculated to be 1,032 people per square kilometer or 2,672 people per square mile.</p>
+          <div class="image">
+          <img src="assets/san%20simon%20about.png" width="70%" height="auto" >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>About San Simon</h3>
+            <p>San Simon is a landlocked municipality in Pampanga's coastal province. The municipality has a land area of 57.37 square kilometers or 22.15 square miles, accounting for 2.87 percent of the total area of Pampanga...</p>
+            <a onclick="togglePopup52()">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-53">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup53()">&times;</div>
+          <h1 class="attraction-h">Places you must visit</h1>
+            <br>
+          <h1 class="attraction">Tete Bangbang</h1>
+          <p class="attraction-p"> Tete bangbang is a bridge located in San Simon, Pampanga.
+          <br><a href="https://www.google.com/maps/dir/Pampanga/Tete+Bangbang,+San+Simon,+Pampanga/@15.0447183,120.6447949,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x3396ffca54894fcb:0x149ea4230ae034f6!2m2!1d120.8096918!2d14.9939256!3e08" target="_blank">Directions can be accessed by clicking here.</a></p>
+           <div class="collage">
+            <img src="assets/san%20simon%20bridge.png" width="70%" height="auto" > </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Tourist Spots</h3>
+            <p>Come and Visit all the wonderful attractions San Simon, Pampanga has to offer</p>
+            <br><br>
+            <a onclick="togglePopup53()">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-54">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup54()">&times;</div>
+          <h1 class="culture">History of San Simon</h1>
+          <p class="culture-p"><br> <br> <br>In 1770, Don Mariano del Pilar de los Reyes founded a farming village named 'Barrio Del Pilar', which later became the town of San Simon. The village was located between the towns of San Luis in the north and Apalit in the south.</p>
+          <img class="grid"
+         src="assets/san%20simon%20history.png" width= "35%" height="auto">
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>History of San Simon</h3>
+            <p>In 1770, Don Mariano del Pilar de los Reyes founded a farming village named "Barrio Del Pilar"...</p>
+            <a onclick="togglePopup54()">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+                                              <!--SASMUAN PAMPANGA-->
+  <div class="section-main" id="sasmuan">
+    <div class="container">
+      <div class="popup" id="popup-55">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup55()">&times;</div>
+          <h1>Sasmuan</h1>
+          <p>Province of Pampanga<br></br> Sasmuan, formerly known as Sexmoan, is a coastal municipality in the province of Pampanga. The municipality has a land area of 91.80 square kilometers or 35.44 square miles, accounting for 4.59 percent of Pampanga's total area. According to the 2020 Census, its population was 29,076 people. This represented 1.19 percent of the total population of Pampanga province, or 0.23 percent of the total population of the Central Luzon region. Based on these figures, the population density is calculated to be 317 inhabitants per square kilometer or 820 inhabitants per square mile.</p>
+          <div class="image">
+            <img src="assets/sasmuan%20about.png" width="70%" height="auto" >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>About Sasmuan</h3>
+            <p>Sasmuan, formerly known as Sexmoan, is a coastal municipality in the province of Pampanga. The municipality has a land area of 91.80 square kilometers or 35.44 square miles, accounting for 4.59 percent of Pampanga's total area...</p>
+            <a onclick="togglePopup55()">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-56">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup56()">&times;</div>
+          <h1 class="attraction-h">Places you must visit</h1>
+            <br>
+          <h1 class="attraction">Sasmuan Bangkung Malapad Critical Habitat and Ecotourism Area</h1>
+          <p class="attraction-p">It is not just a beautiful place of birds and forests but is also a story of how the local community works together in protecting part of their home. The local government also worked with private companies who helped with the critical habitat’s conservation.
+          <br><a href="https://www.google.com/maps/dir/Pampanga/Sasmuan,+Pampanga/@14.9839032,120.5451809,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x33965c04b9046e4f:0xd163e526c1603145!2m2!1d120.6142365!2d14.8876364!3e0" target="_blank">Directions can be accessed by clicking here.</a></p>
+           <div class="collage">
+            <img src="assets/wetland.png" width="70%" height="auto" > </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Tourist Spots</h3>
+            <p>Be ready for all the stunning sceneries Sasmuan, Pampanga has in store for you!</p>
+            <br><br>
+            <a onclick="togglePopup56()">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-57">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup57()">&times;</div>
+          <h1 class="culture">Culture & Tradition</h1>
+          <p class="culture-p"><br>Sasmuan is a small fourth-class municipality with a rich history, cheerful residents, and a celebration-the Kuraldal Festival of Santa Lucia-that brings them all together. The municipality celebrates it as the Kuraldal Festival. Although it is a small town, there were thousands of people who gathered in the streets and danced, sang, and praised as one big community.</p>
+          <img class="grid" 
+         src="assets/sasmuan%20culture.png" width= "35%" height="auto">
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Culture of Sasmuan</h3>
+            <p>Sasmuan is a small fourth-class municipality with a rich history, cheerful residents, and a celebration-the Kuraldal Festival of Santa Lucia-that brings them all together...</p>
+            <a onclick="togglePopup57()">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+                                              <!--STA ANA PAMPANGA-->
+  <div class="section-main" id="stana">
+    <div class="container">
+      <div class="popup" id="popup-59">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup59()">&times;</div>
+          <h1>Sta Ana</h1>
+          <p>Province of Pampanga<br></br>Santa Ana is a landlocked municipality in Pampanga's coastal province. The municipality has a land area of 39.84 square kilometers or 15.38 square miles, accounting for 1.99 percent of the total area of Pampanga. The population was 61,537 according to the 2020 Census. This accounted for 2.52 percent of the total population of Pampanga province, or 0.50 percent of the total population of Central Luzon. Based on these figures, the population density is calculated to be 1,545 people per square kilometer or 4,001 people per square mile.</p>
+          <div class="image">
+          <img src="assets/sta%20ana%20about.png" width="70%" height="auto" >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>About Sta Ana</h3>
+            <p>Santa Ana is a landlocked municipality in Pampanga's coastal province. The municipality has a land area of 39.84 square kilometers or 15.38 square miles, accounting for 1.99 percent of the total area of Pampanga...</p>
+            <a onclick="togglePopup59()">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-60">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup60()">&times;</div>
+          <h1 class="attraction-h">Places you must visit</h1>
+            <br>
+          <h1 class="attraction">Majigangga Festival</h1>
+          <p class="attraction-p"> Majigangga is a Kapampangan word that means giant, the event is also somehow similar to the Higante Festival of the Tagalogs held in Angono, Rizal.<br><a href="https://www.google.com/maps/dir/Pampanga/Santa+Ana,+Pampanga/@15.0766816,120.6257526,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x3396fbb1da334319:0x51f69699c0243f68!2m2!1d120.769476!2d15.1091694!3e0" target="_blank">More info about this can be accessed by clicking here</a></p>
+           <div class="collage">
+            <img src="assets/majingga.png" width="70%" height="auto" > </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Tourist Spots</h3>
+            <p>Come and Visit all the wonderful attractions Sta. Ana, Pampanga has to offer</p>
+            <br><br>
+            <a onclick="togglePopup60()">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-61">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup61()">&times;</div>
+          <h1 class="culture">History of Sta Ana</h1>
+          <p class="culture-p"><br> <br>Sta Ana was previously known as 'Bale Pinpin,' which translates as 'laid aside. The name came about after the town lost several barrios to Arayat, Mexico, and San Luis in 1810. It was originally part of vast tracts of forest land, primarily bamboo groves, stretching from Apalit to Betis.</p>
+          <img class="grid"
+         src="assets/sta%20ana%20history.png" width= "35%" height="auto">
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>History of Sta Ana</h3>
+            <p>Was previously known as 'Bale Pinpin,' which translates as 'laid aside. The name came about after the town lost several barrios to Arayat, Mexico, and San Luis in 1810.</p>
+            <a onclick="togglePopup61()">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+                                            <!--STA RITA PAMPANGA-->
+  <div class="section-main" id="starita">
+    <div class="container">
+      <div class="popup" id="popup-62">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup62()">&times;</div>
+          <h1>Sta Rita</h1>
+          <p>Province of Pampanga<br></br>Santa Rita is a landlocked municipality in Pampanga's coastal province. The municipality has a land area of 29.76 square kilometers or 11.49 square miles, accounting for 1.49 percent of the total area of Pampanga. According to the 2020 Census, its population was 48,209. This accounted for 1.98 percent of the total population of Pampanga province, or 0.39 percent of the total population of Central Luzon. Based on these figures, the population density is calculated to be 1,620 people per square kilometer or 4,196 people per square mile.</p>
+          <div class="image">
+          <img src="assets/sta%20rita.png" width="70%" height="auto" >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>About Santa Rita</h3>
+            <p>Santa Rita is a landlocked municipality in Pampanga's coastal province. The municipality has a land area of 29.76 square kilometers or 11.49 square miles, accounting for 1.49 percent of the total area of Pampanga...</p>
+            <a onclick="togglePopup62()">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-63">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup63()">&times;</div>
+          <h1 class="attraction-h">Places you must visit</h1>
+            <br>
+          <h1 class="attraction">Sta. Rita Ecopark</h1>
+          <p class="attraction-p">Sta. Rita EcoPark is a park in Pampanga. Sta. Rita EcoPark is situated near the San Isidro Health Center, and close to the Overseas Filipino Workers Desk<br><a href="https://www.google.com/maps/dir/Pampanga/Eco+Park,+Santa+Rita,+Pampanga/@15.0483744,120.5677825,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x3396f5de06ed7e0d:0x2910125d50379f35!2m2!1d120.6144962!2d15.0181686!3e0" target="_blank">Directions can be accessed by clicking here.</a></p>
+           <div class="collage">
+            <img src="assets/sta%20rita%20ecopark.png" width="70%" height="auto" > </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Tourist Spots</h3>
+            <p>Be ready for all the stunning sceneries Sta. Rita, Pampanga has in store for you!</p>
+            <br><br>
+            <a onclick="togglePopup63()">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-64">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup64()">&times;</div>
+          <h1 class="culture">History of Sta Rita</h1>
+          <p class="culture-p"><br> <br> The first mention of Sta Rita was in 1697. According to legend, Sta Rita was once a part of the Municipality of Porac. It was once a wilderness with a plethora of massive trees. It was founded on the clearings and settlements made at a location known as 'Gasac,' which is now known as San Isidro.</p>
+          <img class="grid"
+         src="assets/sta%20rita%20history.png" width= "35%" height="auto">
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>History of Sta Rita</h3>
+            <p>It was once a wilderness with a plethora of massive trees.</p>
+            <a onclick="togglePopup64()">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+                                   <!--STO TOMAS PAMPANGA-->
+  <div class="section-main" id="stotomas">
+    <div class="container">
+      <div class="popup" id="popup-65">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup65()">&times;</div>
+          <h1>Santo Tomas</h1>
+          <p>Province of Pampanga<br></br>Santo Tomas is a landlocked municipality in Pampanga's coastal province. The municipality has a land area of 21.30 square kilometers or 8.22 square miles, accounting for 1.06 percent of the total area of Pampanga. The population was 42,846 according to the 2020 Census. This accounted for 1.76 percent of the total population of Pampanga province, or 0.34 percent of the Central Luzon region's total population. Based on these figures, the population density is calculated to be 2,012 people per square kilometer or 5,212 people per square mile.</p>
+          <div class="image">
+          <img src="assets/sto%20tomas%20about.png" width="70%" height="auto" >
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>About Santo Tomas</h3>
+            <p>Santo Tomas is a landlocked municipality in Pampanga's coastal province. The municipality has a land area of 21.30 square kilometers or 8.22 square miles, accounting for 1.06 percent of the total area of Pampanga...</p>
+            <a onclick="togglePopup65()">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-66">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup66()">&times;</div>
+          <h1 class="attraction-h">Places you must visit</h1>
+          <br>
+          <h1 class="attraction">Pampanga Pottery</h1>
+          <p class="attraction-p"> A Place in pampanga where they offer their rich culture of traditional creations of pottery. Anyone can buy, admire, and appreciate these wonderful handicrafts made in Santo Tomas Pampanga.
+          <br><a href="https://www.google.com/maps/dir/Pampanga/Pampanga+Pottery,+D.+P.+Canlas,+Santo+Tomas,+Pampanga/@15.0404809,120.6302433,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3396f4848d776319:0x55a57880b7da26f8!2m2!1d120.6199895!2d15.079409!1m5!1m1!1s0x3396f71e84f52765:0x3ee0f7f656f75494!2m2!1d120.7096765!2d15.005316!3e0" target="_blank">Directions can be accessed by clicking here.</a></p>
+           <div class="collage">
+            <img src="assets/sto%20tomas%20pottery.png" width="70%" height="auto" > </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>Tourist Spots</h3>
+            <p>Come and Visit all the wonderful attractions Sto. Tomas, Pampanga has to offer</p>
+            <br><br>
+            <a onclick="togglePopup66()">Visit</a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-67">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup67()">&times;</div>
+          <h1 class="culture">History of Sto Tomas</h1>
+          <p class="culture-p">Santo Tomas was separated from its parent city of Minalin, Pampanga, on September 15, 1792. It was ceded to San Fernando, Pampanga on January 2, 1905, until 1905. On October 12, 1951, Elpidio Quirino issued Executive Order No. 476, which established Santo Tomas and its five barrios of San Matias, San Vicente, San Bartolome, Santo Rosario, and Santo Tomas, with the seat of government in barrio San Vicente.</p>
+          <div class="image">
+            <img src="sto%20tomas%20history" width="35%" height="auto">
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="box">
+          <div class="content">
+            <h3>History of Sto Tomas</h3>
+            <p>Santo Tomas was separated from its parent city of Minalin, Pampanga, on September 15, 1792. It was ceded to San Fernando, Pampanga on January 2, 1905, until 1905.</p>
+            <a onclick="togglePopup67()">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  
+  <div class="backtotop">
+    <a href="#" class="gotopbtn" title="Back To Top"><i class="fas fa-arrow-up"></i></a>
+  </div>
+    <script src="Javascript/script.js"></script>
+    <script>
+      // Pop-ups
+
+      function togglePopup1(){
+        document.getElementById("popup-1").classList.toggle("active");
+      }
+
+      function togglePopup2(){
+        document.getElementById("popup-2").classList.toggle("active");
+      }
+
+      function togglePopup3(){
+        document.getElementById("popup-3").classList.toggle("active");
+      }
+
+      function togglePopup4(){
+        document.getElementById("popup-4").classList.toggle("active");
+      }
+
+      function togglePopup5(){
+        document.getElementById("popup-5").classList.toggle("active");
+      }
+
+      function togglePopup6(){
+        document.getElementById("popup-6").classList.toggle("active");
+      }
+
+      function togglePopup7(){
+        document.getElementById("popup-7").classList.toggle("active");
+      }
+
+      function togglePopup8(){
+        document.getElementById("popup-8").classList.toggle("active");
+      }
+
+      function togglePopup9(){
+        document.getElementById("popup-9").classList.toggle("active");
+      }
+
+      function togglePopup10(){
+        document.getElementById("popup-10").classList.toggle("active");
+      }
+
+      function togglePopup11(){
+        document.getElementById("popup-11").classList.toggle("active");
+      }
+
+      function togglePopup12(){
+        document.getElementById("popup-12").classList.toggle("active");
+      }
+
+      function togglePopup13(){
+        document.getElementById("popup-13").classList.toggle("active");
+      }
+
+      function togglePopup14(){
+        document.getElementById("popup-14").classList.toggle("active");
+      }
+
+      function togglePopup15(){
+        document.getElementById("popup-15").classList.toggle("active");
+      }
+
+      function togglePopup16(){
+        document.getElementById("popup-16").classList.toggle("active");
+      }
+
+      function togglePopup17(){
+        document.getElementById("popup-17").classList.toggle("active");
+      }
+      
+      function togglePopup18(){
+        document.getElementById("popup-18").classList.toggle("active");
+      }
+
+      function togglePopup19(){
+        document.getElementById("popup-19").classList.toggle("active");
+      }
+
+      function togglePopup20(){
+        document.getElementById("popup-20").classList.toggle("active");
+      }
+
+      function togglePopup21(){
+        document.getElementById("popup-21").classList.toggle("active");
+      }
+
+      function togglePopup22(){
+        document.getElementById("popup-22").classList.toggle("active");
+      }
+
+      function togglePopup23(){
+        document.getElementById("popup-23").classList.toggle("active");
+      }
+
+      function togglePopup24(){
+        document.getElementById("popup-24").classList.toggle("active");
+      }
+
+      function togglePopup25(){
+        document.getElementById("popup-25").classList.toggle("active");
+      }
+
+      function togglePopup26(){
+        document.getElementById("popup-26").classList.toggle("active");
+      }
+
+      function togglePopup27(){
+        document.getElementById("popup-27").classList.toggle("active");
+      }
+
+      function togglePopup28(){
+        document.getElementById("popup-28").classList.toggle("active");
+      }
+
+      function togglePopup29(){
+        document.getElementById("popup-29").classList.toggle("active");
+      }
+
+      function togglePopup30(){
+        document.getElementById("popup-30").classList.toggle("active");
+      }
+
+      function togglePopup31(){
+        document.getElementById("popup-31").classList.toggle("active");
+      }
+
+      function togglePopup32(){
+        document.getElementById("popup-32").classList.toggle("active");
+      }
+
+      function togglePopup33(){
+        document.getElementById("popup-33").classList.toggle("active");
+      }
+
+      function togglePopup34(){
+        document.getElementById("popup-34").classList.toggle("active");
+      }
+
+      function togglePopup35(){
+        document.getElementById("popup-35").classList.toggle("active");
+      }
+
+      function togglePopup36(){
+        document.getElementById("popup-36").classList.toggle("active");
+      }
+
+      function togglePopup37(){
+        document.getElementById("popup-37").classList.toggle("active");
+      }
+
+      function togglePopup38(){
+        document.getElementById("popup-38").classList.toggle("active");
+      }
+
+      function togglePopup39(){
+        document.getElementById("popup-39").classList.toggle("active");
+      }
+
+      function togglePopup40(){
+        document.getElementById("popup-40").classList.toggle("active");
+      }
+
+      function togglePopup41(){
+        document.getElementById("popup-41").classList.toggle("active");
+      }
+
+      function togglePopup42(){
+        document.getElementById("popup-42").classList.toggle("active");
+      }
+
+      function togglePopup43(){
+        document.getElementById("popup-43").classList.toggle("active");
+      }
+      
+      function togglePopup44(){
+        document.getElementById("popup-44").classList.toggle("active");
+      }
+
+      function togglePopup45(){
+        document.getElementById("popup-45").classList.toggle("active");
+      }
+
+      function togglePopup46(){
+        document.getElementById("popup-46").classList.toggle("active");
+      }
+
+      function togglePopup47(){
+        document.getElementById("popup-47").classList.toggle("active");
+      }
+
+      function togglePopup48(){
+        document.getElementById("popup-48").classList.toggle("active");
+      }
+
+      function togglePopup49(){
+        document.getElementById("popup-49").classList.toggle("active");
+      }
+
+      function togglePopup50(){
+        document.getElementById("popup-50").classList.toggle("active");
+      }
+
+      function togglePopup51(){
+        document.getElementById("popup-51").classList.toggle("active");
+      }
+
+      function togglePopup52(){
+        document.getElementById("popup-52").classList.toggle("active");
+      }
+
+      function togglePopup53(){
+        document.getElementById("popup-53").classList.toggle("active");
+      }
+
+      function togglePopup54(){
+        document.getElementById("popup-54").classList.toggle("active");
+      }
+
+      function togglePopup55(){
+        document.getElementById("popup-55").classList.toggle("active");
+      }
+
+      function togglePopup56(){
+        document.getElementById("popup-56").classList.toggle("active");
+      }
+
+      function togglePopup57(){
+        document.getElementById("popup-57").classList.toggle("active");
+      }
+
+      function togglePopup58(){
+        document.getElementById("popup-58").classList.toggle("active");
+      }
+
+      function togglePopup59(){
+        document.getElementById("popup-59").classList.toggle("active");
+      }
+
+      function togglePopup60(){
+        document.getElementById("popup-60").classList.toggle("active");
+      }
+
+      function togglePopup61(){
+        document.getElementById("popup-61").classList.toggle("active");
+      }
+
+      function togglePopup62(){
+        document.getElementById("popup-62").classList.toggle("active");
+      }
+
+      function togglePopup63(){
+        document.getElementById("popup-63").classList.toggle("active");
+      }
+
+      function togglePopup64(){
+        document.getElementById("popup-64").classList.toggle("active");
+      }
+
+      function togglePopup65(){
+        document.getElementById("popup-65").classList.toggle("active");
+      }
+
+      function togglePopup66(){
+        document.getElementById("popup-66").classList.toggle("active");
+      }
+
+      function togglePopup67(){
+        document.getElementById("popup-67").classList.toggle("active");
+      }
+
+    </script>
+  </body>
+</HTML>

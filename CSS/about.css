@@ -1,0 +1,317 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
+ /* background-image: url("../assets/home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;*/
+}
+
+nav {
+  background: #ffdf27;
+  display: flex;
+  padding: -4% 3%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100000;
+  cursor: pointer;
+}
+
+nav img {
+  height: 93px;
+  width: 100px;
+  margin-top: -7px;
+}
+
+nav ul {
+  flex: 1;
+  text-align: center;
+  margin-left: -120px;
+  margin-top: -40px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+nav ul li a {
+  color: #ffffff;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: capitalize;
+  text-align: center
+}
+
+a.active,a:hover {
+  background: #252525;
+  transition: .5s;
+}
+/*banner area*/
+.wrapper{
+  width:90%;
+  margin:0 auto;
+}
+
+/* wag nyo nang gagalawen to parang awa nyo na */
+
+.banner{
+  position: absolute;  /*eto fixed ginawa kong absolute */
+  /*background-size: cover; dito may problema tinanggal ko */
+  width: 100%;
+}
+
+.banner:after{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  display: block;
+  width:100%;
+  height:100%;
+  opacity:.7;
+  z-index:-1;
+}
+
+.content{
+  width:100%;
+  height:800px;
+  position: fixed;
+  background: white;
+  top: 550px; 
+  /* banner size and content visibility*/
+}
+
+
+/*for tabs code*/
+.tabs h1 {
+  margin-bottom: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 40px;
+  font-weight: 100;
+}
+
+/* wag niyo gagalawen css nito pls */
+.tabs {
+  position: absolute;
+  margin-top:55%; /*dito from 20% to 50% para bumaba */ 
+  margin-left:30%;
+  transform:translate(-50%, -50%);
+  width:500px;
+  height:250px;
+}
+
+.tabs .tab-header{
+  height:60px;
+  display: flex;
+  align-items:center; 
+}
+
+.tabs .tab-header > div{
+  width:calc(100%/4);
+  text-align:center;
+  color:rgb(84, 90, 94);
+  font-weight:400;
+  cursor: pointer;
+  font-size:14px;
+  text-transform:uppercase;
+}
+
+.tabs .tab-header > div:hover{
+  color:#000000;
+  
+}
+
+.tabs .tab-header > div > i{
+ display: block;
+ margin-bottom:5px;
+}
+
+.tabs .tab-header > div.active{
+color:gray;
+}
+
+.tabs .tab-indicator{
+  position:relative;
+  width: calc(100%/4);
+  height: 2px;
+  background: #000000;
+  border-radius:5px;
+  transition: all 500ms ease-in-out;
+  
+}
+
+.tabs .tab-body{
+  position: relative;
+  height:calc(100% -60px) ;
+  padding:0;
+  margin: 0 0 49px;
+  border-bottom: 1px solid #d0d0d0;
+  list-style: none;
+  width: calc(500%/2);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  font-weight: 60;
+}
+
+/*for content*/
+.tabs .tab-body header{
+  font-size:25px;
+} 
+.tabs .tab-body h3{
+  text-align: left;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.tabs .tab-body h5{
+  font-weight: 10;
+}
+
+.tabs .tab-body p{
+  margin-right:40%;
+  text-align: left; 
+}
+
+/*image founder*/
+.founder{
+  position: relative;
+}
+.nicole{
+  bottom: 1px;
+  padding:10px;
+  /*margin-right: 122px;*/
+  margin-left: 50px;
+  display: inline;
+  border-left: 3px solid rgb(8, 9, 12);  }
+
+.nicole:hover {
+  background:linear-gradient(to left, rgba(255,0,0,0), rgba(204,204,204,208));
+  color: black;
+  }
+
+.ruben{
+  bottom: 1px;
+  padding:10px;
+  margin-left: 130px;
+  display: inline;
+  border-left: 3px solid rgb(8, 9, 12);  
+}
+.ruben:hover {
+  background: linear-gradient(to left, rgba(255,0,0,0), rgba(204,204,204,208));
+  color: black;
+  transition:50s;
+  }
+
+.nigel{
+  bottom: 1px;
+  padding:10px;
+  margin-left: 150px;
+  display: inline;
+  border-left: 3px solid rgb(8, 9, 12); 
+}
+.nigel:hover {
+  background:linear-gradient(to left, rgba(255,0,0,0), rgba(204,204,204,208));
+  color: black;
+  }
+
+.vash{
+  bottom: 1px;
+  padding:10px;
+  margin-left: 150px;
+  display: inline;
+ border-left: 3px solid rgb(8, 9, 12);
+}
+.vash:hover {
+  background:linear-gradient(to left, rgba(255,0,0,0), rgba(204,204,204,208));
+  color: black;
+  }
+
+.tabs .tab-body > div{
+ position: absolute;
+ top: -200%;
+ opacity:0;
+ margin-top:5px;
+ transform:scale(0.9);
+}
+
+.tabs .tab-body > div.active{
+  top:0px;
+  opacity:1;
+  transform:scale(1);
+  margin-top: 8px; 
+  text-align: left;
+} 
+
+/* Side bar for mobile */
+
+nav .fa {
+  display: none;
+}
+
+@media(max-width: 700px){
+  .text-box h1 {
+    font-size: 50px
+  }
+
+  .nav ul li {
+    display: inline-block;
+    text-align: center
+  }
+
+  nav ul {
+    position: absolute;
+    background: #ffdf27;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    z-index: 2;
+    text-align: center;
+    margin-left: 0;
+    padding: 30px;
+    transition: 1s;
+  }
+
+  nav .fa {
+    display: block;
+    color: black;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    float: left;
+  }
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+ width: 10px;
+ height: 1px ;
+ background-color: #fdfdfd;
+} 
+::-webkit-scrollbar-track {
+ border: 1px solid rgba(0, 0, 0, 0.25);
+ box-shadow: inset 0 0 2.5px 2 rgba(0,0,0,.5);
+}
+
+::-webkit-scrollbar-thumb {
+ background-color: #645d5d;
+ border-radius: 20px;
+ outline: 1px solid rgb(0, 0, 0);
+}  

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Backbone of the Webpage -->
+    <title>LocaTour | Pampanga</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="CSS/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/logo.png" type="image/gif" size="64x64" />
+    <!-- Scripts -->
+    <script src="https://kit.fontawesom.com/a076d05399.js"></script>
+    <script src="Javascript/script.js"></script> 
+  </head>
+  <body>
+    <!--Navigation bar for Full screen and Mobile-->
+    <nav>
+      <img src="assets/logo.png" alt="logo" >
+     <ul id="sidebar">
+        <i class="fa fa-times" onclick="hideBar()"></i>
+        <br />
+        <br />
+        <li><a class="active" href="#">HOME</a></li>
+        <li><a href="travel guide.html">TRAVEL GUIDE</a></li>
+        <li><a href="places.html">PLACES</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+      </ul>
+      <i class="fa fa-bars" onclick="showBar()"></i>
+    </nav>
+    <!-- Yung nakasulat sa gitna ng home -->
+   <div class="text-box">
+     <h1> LocalityTour </h1>
+     <a href="travel guide.html" class="pampanga"> PAMPANGA </a>
+     <p> Know everything about a province with just one click! </p>
+   </div>
+   <!-- Sidebar menu javascript go left and right for mobile-->
+   <script>
+    var sidebar = document.getElementById("sidebar");
+
+    function hideBar() {
+      sidebar.style.right = "-200px";
+    }
+
+    function showBar() {
+      sidebar.style.right = "0"
+    }
+   </script>
+
+   <!--footer-->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="row">
+          <div class="footer-col">
+            <img src="assets/footer_logo.png" width="300" height="100">
+            <h3 id="Title">PAMPANGA PHILIPPINES</h3>
+              <h4 id="title-subtext">Learn, Explore, and Discover </h4>  
+          </div>
+          <div class="footer-col">
+            <h4 id="menu">Menu</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="travel guide.html">Travel Guide</a></li>
+              <li><a href="places.html">Places</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 id="about-website">About our Website</h4>
+            <ul>
+              <li><p>This project aims to improve the locality of Pampanga by promoting their tourist attractions, culture, and experiences in each destination.</p></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-subcol">
+          <p> © 2021 LocaTour. All rights reserved. Made by RAVEN Tech <p>
+        </div>
+      <div> 
+    </footer>
+  </body>
+</html>

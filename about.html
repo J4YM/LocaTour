@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<HTML>
+  <html lang="en" dir="ltr">
+  <head>
+    <title>LocaTour | About</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="CSS/about.css" rel="stylesheet"  />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/gif" />
+    <script src="https://kit.fontawesom.com/a076d05399.js"></script>
+  </head>
+
+<!--nav bar-->
+  <body oncontextmenu="return false;">
+    <nav>
+      <img src="assets/logo.png" alt="logo">
+      <ul id="sidebar">
+        <i class="fa fa-times" onclick="hideBar()"></i>
+        <br />
+        <br />
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="travel guide.html">TRAVEL GUIDE</a></li>
+        <li><a href="places.html">PLACES</a></li>
+        <li><a class="active" href="#">ABOUT</a></li>
+      </ul>
+      <i class="fa fa-bars" onclick="showBar()"></i>
+    </nav>
+    
+    <!--for banner-->
+    <div class="banner">
+      <video width="100%" height="50%" autoplay muted loop >
+        <source src="assets/videobanner.mp4" type="video/mp4"> 
+      </video>  
+    </div>
+    <div class="tabs">
+      <h1> About us </h1>
+      <div class="tab-header">
+        <div class="active">
+          <i class="fa fa-map-marker"></i> LocaTour
+        </div>
+        <div>
+          <i class="fa fa-bullseye"></i> Goal
+        </div>
+        <div>
+          <i class="fa fa-question"></i> FAQ
+        </div>
+        <div>
+          <i class="fa fa-user"></i> DEVELOPERS
+        </div>
+      </div>
+      <div class="tab-indicator"></div>
+      <div class="tab-body">
+        <div class="active" id="active">
+          <br><h3> What is LocaTour? </h3>
+          </br><p>LocaTour is a tourist website that helps the user in knowing about the routes, landmarks, culture, and tourist attractions in the certain city that they want to explore. The app also provides information about educational and fun activities to do in the area, making it more useful for both local and foreign tourists.</p>
+        </div>
+        <div>
+          <br> <h3>Our Goal</h3> 
+          </br> <p> The purpose of this website is to promote tourism and geographic knowledge in the province of Pampanga. We also aim to promote the Attractions and Culture of the cities and municipalities in order for the users to fully experience visiting the specific place. </p>
+        </div>
+        <div>
+          <br> <h5>Below is some useful information to help you get started with the new features available on LocaTour.</h5>
+          <br>  
+          <p class="question"><h3> How to navigate through this website?</h3> </p>
+          <br>
+          <p class="answer">Use the Places tab on the navigation bar to pick a place to visit and get redirected to all the information about the history, and places to visit within your chosen province or city</p>
+          <br>
+          <p class="question"> <h3>Is this website compatible for all types of devices?</h3></p>
+          <br>          
+          <p class="answer">This website is compatible for desktops and mobile devices</p>
+          <br>
+          <p class="question"> <h3>How do I find out the routes and landmarks of a place I want to visit?</h3></p>
+          <br>
+          <p class="answer">You can navigate to the drop down menu of the specific place you've chosen and click the (locate) tab which will redirect you to an external website to give you directions </p>
+          <br>
+          <p class="question"> <h3>How can I find tourist attractions in a specific location that I want to visit?</h3> </p>
+          <br>
+          <p class="answer">You need to pick a specific place on the places tab on the navigation bar and use the drop-down menu to see all the destinations near the specific place you've chosen</p>
+          <br>
+          <p class="question"> <h3>What are the benefits of using this website?</h3> </p>
+          <br> 
+          <p class="answer"> This website can give you an all-in-one guide to know the history, wonderful destinations to visit, and a background of what to do when visiting a certain place for the first time.</p>
+        </div>
+        
+        <div>
+          <br> <h3>Meet The Team</h3>
+          </br> <p> Our team is what really makes us tick. We are dreamers and creators to the core. </p>
+          <div class="founder">
+            <img src="assets/nicole.png" alt="nicole.img" class="image" width="300" height="300"> 
+            <img src="assets/ruben.png" alt="ruben.img" class="image" width="300" height="300">
+            <img src="assets/nigel.png" alt="nigel.img" class="image" width="300" height="300">
+            <br>
+            <div class="nicole">Anne Nicole Hallegado</div>
+            <div class="ruben">Ruben Banaga</div>
+            <div class="nigel">Nigel Matunan</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <script>
+    var sidebar = document.getElementById("sidebar");
+    function hideBar() {
+      sidebar.style.right = "-200px";
+    }
+
+    function showBar() {
+      sidebar.style.right = "0"
+    }
+
+    let tabHeader = document.getElementsByClassName("tab-header")[0];
+    let tabIndicator = document.getElementsByClassName("tab-indicator")[0];
+    let tabBody = document.getElementsByClassName("tab-body")[0];
+
+    let tabsPane = tabHeader.getElementsByTagName("div");
+
+    for(let i=0;i<tabsPane.length;i++){
+      tabsPane[i].addEventListener("click",function(){
+        tabHeader.getElementsByClassName("active")[0].classList.remove("active");
+        tabsPane[i].classList.add("active");
+        tabBody.getElementsByClassName("active")[0].classList.remove("active");
+        tabBody.getElementsByTagName("div")[i].classList.add("active");
+        tabIndicator.style.left=`calc(calc(100% / 4) * ${i})`;
+      });
+    }
+   </script>
+   
+  </body>
+</HTML>
